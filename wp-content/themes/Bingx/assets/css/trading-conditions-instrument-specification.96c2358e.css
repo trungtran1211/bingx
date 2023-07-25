@@ -1,0 +1,2264 @@
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle
+}
+
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    display: block;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.select2-container .select2-selection--single .select2-selection__clear {
+    background-color: transparent;
+    border: none;
+    font-size: 1em
+}
+
+.select2-container[dir=rtl] .select2-selection--single .select2-selection__rendered {
+    padding-left: 20px;
+    padding-right: 8px
+}
+
+.select2-container .select2-selection--multiple {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    min-height: 32px;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    display: inline;
+    list-style: none;
+    padding: 0
+}
+
+.select2-container .select2-selection--multiple .select2-selection__clear {
+    background-color: transparent;
+    border: none;
+    font-size: 1em
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 100%;
+    height: 18px;
+    margin-left: 5px;
+    margin-top: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    resize: none;
+    vertical-align: bottom;
+    word-break: keep-all
+}
+
+.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+.select2-dropdown {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    left: -100000px;
+    position: absolute;
+    width: 100%;
+    z-index: 1051
+}
+
+.select2-results {
+    display: block
+}
+
+.select2-results__options {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.select2-results__option {
+    padding: 6px;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.select2-results__option--selectable {
+    cursor: pointer
+}
+
+.select2-container--open .select2-dropdown {
+    left: 0
+}
+
+.select2-container--open .select2-dropdown--above {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.select2-container--open .select2-dropdown--below {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.select2-search--dropdown {
+    display: block;
+    padding: 4px
+}
+
+.select2-search--dropdown .select2-search__field {
+    box-sizing: border-box;
+    padding: 4px;
+    width: 100%
+}
+
+.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+    -webkit-appearance: none
+}
+
+.select2-search--dropdown.select2-search--hide {
+    display: none
+}
+
+.select2-close-mask {
+    background-color: #fff;
+    border: 0;
+    display: block;
+    filter: alpha(opacity=0);
+    height: auto;
+    left: 0;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: auto;
+    z-index: 99
+}
+
+.select2-hidden-accessible {
+    clip: rect(0 0 0 0) !important;
+    border: 0 !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px
+}
+
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+    height: 26px;
+    margin-right: 20px;
+    padding-right: 0
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #999
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    right: 1px;
+    top: 1px;
+    width: 20px
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0
+}
+
+.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__clear {
+    float: left
+}
+
+.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__arrow {
+    left: 1px;
+    right: auto
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+    background-color: #eee;
+    cursor: default
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+    display: none
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #888;
+    border-width: 0 4px 5px
+}
+
+.select2-container--default .select2-selection--multiple {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: text;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    position: relative
+}
+
+.select2-container--default .select2-selection--multiple.select2-selection--clearable {
+    padding-right: 25px
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+    cursor: pointer;
+    font-weight: 700;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 1px;
+    position: absolute;
+    right: 0
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 0 0 20px;
+    position: relative;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    cursor: default;
+    padding-left: 2px;
+    padding-right: 5px
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    background-color: transparent;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #aaa;
+    border-top-left-radius: 4px;
+    color: #999;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    left: 0;
+    padding: 0 4px;
+    position: absolute;
+    top: 0
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus,
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    outline: none
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice {
+    margin-left: 5px;
+    margin-right: auto
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__display {
+    padding-left: 5px;
+    padding-right: 2px
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #aaa;
+    border-right: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px
+}
+
+.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__clear {
+    float: left;
+    margin-left: 10px;
+    margin-right: auto
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #000;
+    outline: 0
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--multiple {
+    background-color: #eee;
+    cursor: default
+}
+
+.select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+    display: none
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #aaa
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    -webkit-appearance: textfield;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: 0
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto
+}
+
+.select2-container--default .select2-results__option .select2-results__option {
+    padding-left: 1em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+    padding-left: 0
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -1em;
+    padding-left: 2em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -2em;
+    padding-left: 3em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -3em;
+    padding-left: 4em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -4em;
+    padding-left: 5em
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -5em;
+    padding-left: 6em
+}
+
+.select2-container--default .select2-results__option--group {
+    padding: 0
+}
+
+.select2-container--default .select2-results__option--disabled {
+    color: #999
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #ddd
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #5897fb;
+    color: #fff
+}
+
+.select2-container--default .select2-results__group {
+    cursor: default;
+    display: block;
+    padding: 6px
+}
+
+.select2-container--classic .select2-selection--single {
+    background-color: #f7f7f7;
+    background-image: -webkit-linear-gradient(top, #fff 50%, #eee);
+    background-image: -o-linear-gradient(top, #fff 50%, #eee 100%);
+    background-image: linear-gradient(180deg, #fff 50%, #eee);
+    background-repeat: repeat-x;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0);
+    outline: 0
+}
+
+.select2-container--classic .select2-selection--single:focus {
+    border: 1px solid #5897fb
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+    height: 26px;
+    margin-right: 20px
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__placeholder {
+    color: #999
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(top, #eee 50%, #ccc);
+    background-image: -o-linear-gradient(top, #eee 50%, #ccc 100%);
+    background-image: linear-gradient(180deg, #eee 50%, #ccc);
+    background-repeat: repeat-x;
+    border: none;
+    border-bottom-right-radius: 4px;
+    border-left: 1px solid #aaa;
+    border-top-right-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFCCCCCC", GradientType=0);
+    height: 26px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 20px
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__clear {
+    float: left
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__arrow {
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-right: 1px solid #aaa;
+    border-top-left-radius: 4px;
+    left: 1px;
+    right: auto
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single {
+    border: 1px solid #5897fb
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
+    background: transparent;
+    border: none
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #888;
+    border-width: 0 4px 5px
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
+    background-image: -webkit-linear-gradient(top, #fff, #eee 50%);
+    background-image: -o-linear-gradient(top, #fff 0, #eee 50%);
+    background-image: linear-gradient(180deg, #fff 0, #eee 50%);
+    background-repeat: repeat-x;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFFFF", endColorstr="#FFEEEEEE", GradientType=0)
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
+    background-image: -webkit-linear-gradient(top, #eee 50%, #fff);
+    background-image: -o-linear-gradient(top, #eee 50%, #fff 100%);
+    background-image: linear-gradient(180deg, #eee 50%, #fff);
+    background-repeat: repeat-x;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFEEEEEE", endColorstr="#FFFFFFFF", GradientType=0)
+}
+
+.select2-container--classic .select2-selection--multiple {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: text;
+    outline: 0;
+    padding-bottom: 5px;
+    padding-right: 5px
+}
+
+.select2-container--classic .select2-selection--multiple:focus {
+    border: 1px solid #5897fb
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__clear {
+    display: none
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__display {
+    cursor: default;
+    padding-left: 2px;
+    padding-right: 5px
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
+    background-color: transparent;
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #888;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0 4px
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #555;
+    outline: none
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice {
+    margin-left: 5px;
+    margin-right: auto
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice__display {
+    padding-left: 5px;
+    padding-right: 2px
+}
+
+.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px
+}
+
+.select2-container--classic.select2-container--open .select2-selection--multiple {
+    border: 1px solid #5897fb
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+    border: 1px solid #aaa;
+    outline: 0
+}
+
+.select2-container--classic .select2-search--inline .select2-search__field {
+    box-shadow: none;
+    outline: 0
+}
+
+.select2-container--classic .select2-dropdown {
+    background-color: #fff;
+    border: 1px solid transparent
+}
+
+.select2-container--classic .select2-dropdown--above {
+    border-bottom: none
+}
+
+.select2-container--classic .select2-dropdown--below {
+    border-top: none
+}
+
+.select2-container--classic .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto
+}
+
+.select2-container--classic .select2-results__option--group {
+    padding: 0
+}
+
+.select2-container--classic .select2-results__option--disabled {
+    color: grey
+}
+
+.select2-container--classic .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #3875d7;
+    color: #fff
+}
+
+.select2-container--classic .select2-results__group {
+    cursor: default;
+    display: block;
+    padding: 6px
+}
+
+.select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #5897fb
+}
+
+.instrument-specification .instrument-specification-search-wrapper {
+    background-color: #fff;
+    max-width: 751px;
+    padding: 17px 0 0;
+    position: relative
+}
+
+.instrument-specification .instrument-specification-search-wrapper.full-width {
+    max-width: none
+}
+
+.instrument-specification .instrument-specification-search {
+    background: transparent url(/build/images/search.5283687a.svg) no-repeat 0 50%;
+    border-color: transparent transparent rgba(24, 24, 30, .08);
+    border-width: 1px;
+    color: #18181e;
+    line-height: 1;
+    padding: 0 30px;
+    width: 100%
+}
+
+.instrument-specification .instrument-specification-search::placeholder {
+    color: #18181e;
+    opacity: 1
+}
+
+.instrument-specification .instrument-specification-reset {
+    background: none;
+    border: none;
+    color: #0bc466;
+    display: none;
+    font-size: 30px;
+    line-height: 1;
+    margin: -16px 0 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: color .3s ease
+}
+
+.instrument-specification .instrument-specification-reset:hover {
+    color: #09a355
+}
+
+.instrument-specification .instrument-specification-select label {
+    color: rgba(24, 24, 30, .3);
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 5px;
+    text-transform: uppercase
+}
+
+.instrument-specification .instrument-specification-select .dropdown-button,
+.instrument-specification .instrument-specification-select select {
+    background: transparent;
+    border: 1px solid rgba(24, 24, 30, .08);
+    color: #18181e;
+    line-height: 1;
+    padding: 0 24px;
+    position: relative;
+    text-align: left;
+    width: 100%
+}
+
+.instrument-specification .instrument-specification-select .dropdown-button svg,
+.instrument-specification .instrument-specification-select select svg {
+    margin: -3px 23px 0 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(180deg)
+}
+
+.instrument-specification .instrument-specification-select ul {
+    border: 1px solid rgba(24, 24, 30, .08);
+    box-shadow: 0 12px 50px rgba(0, 20, 174, .07);
+    min-width: 0;
+    padding: 0;
+    width: 100%
+}
+
+.instrument-specification .instrument-specification-select li button {
+    background: transparent;
+    border: none;
+    color: #18181e;
+    display: block;
+    text-align: left;
+    transition: background-color .3s ease;
+    width: 100%
+}
+
+.instrument-specification .instrument-specification-select li button:focus,
+.instrument-specification .instrument-specification-select li button:hover {
+    background-color: rgba(24, 24, 30, .08)
+}
+
+.instrument-specification .instrument-specification-select li button.selected {
+    color: #0bc466
+}
+
+.instrument-specification .instrument-specification-select .dropdown.open .dropdown-button svg {
+    transform: rotate(0)
+}
+
+.instrument-specification .instrument-specification-wrapper {
+    margin-top: 45px;
+    position: relative
+}
+
+.instrument-specification .instrument-specification-wrapper:before {
+    background: hsla(0, 0%, 100%, .9);
+    content: "";
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2
+}
+
+.instrument-specification .instrument-specification-header {
+    background-color: #fff;
+    margin: 0
+}
+
+.instrument-specification .instrument-specification-header:before {
+    background-color: #fff;
+    bottom: -10px;
+    box-shadow: 0 12px 50px rgba(0, 20, 174, .07);
+    content: "";
+    display: block;
+    height: var(--height, 0);
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: height .3s ease-in;
+    visibility: hidden;
+    width: 100%
+}
+
+.instrument-specification .instrument-specification-header.fixed {
+    padding-top: 27px;
+    transition: margin .3s ease-in, top .3s ease-in;
+    z-index: 99
+}
+
+.small-nav-active .instrument-specification .instrument-specification-header.fixed {
+    margin-top: 0
+}
+
+.instrument-specification .instrument-specification-header.fixed.hide-background:before {
+    visibility: hidden
+}
+
+.instrument-specification .instrument-specification-header.fixed:before {
+    visibility: visible;
+    width: 100vw
+}
+
+.instrument-specification .instrument-loader {
+    align-items: center;
+    background-color: #f3f3f4;
+    display: none;
+    height: 58px;
+    justify-content: center
+}
+
+.instrument-specification .instrument-loader .instrument-loader-text {
+    color: #18181e;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 0 0 0 10px
+}
+
+.instrument-specification .instrument-loader.loading {
+    display: flex
+}
+
+.instrument-specification .instrument-specification-table-wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    padding: 0;
+    transition: padding .3s ease
+}
+
+.instrument-specification .instrument-specification-table-wrapper.hide-border {
+    border: none
+}
+
+.instrument-specification .instrument-specification-table-header {
+    background-color: #fff;
+    cursor: pointer;
+    z-index: 9
+}
+
+.instrument-specification .instrument-specification-table-header h2 {
+    color: #000;
+    font-weight: 800;
+    margin: 0;
+    padding: 25px 0;
+    position: relative;
+    text-transform: uppercase
+}
+
+.instrument-specification .instrument-specification-table-header h2 span {
+    color: rgba(0, 0, 0, .3);
+    font-weight: 300
+}
+
+.instrument-specification .instrument-specification-table-header svg {
+    margin: -5px 21px 0 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: transform .3s ease
+}
+
+.instrument-specification .instrument-specification-table-header.active svg {
+    transform: rotate(180deg)
+}
+
+.instrument-specification .instrument-specification-table-header .svg-container {
+    position: relative
+}
+
+.instrument-specification .instrument-specification-table-header .svg-container svg {
+    left: 15px;
+    position: relative
+}
+
+.instrument-specification .instrument-specification-table-header.fixed {
+    left: 0;
+    padding: 0 10px;
+    right: 0
+}
+
+.instrument-specification .instrument-specification-table {
+    display: none;
+    position: relative
+}
+
+.instrument-specification .instrument-specification-table.sub-table {
+    margin: 0 0 40px
+}
+
+.instrument-specification .instrument-specification-table .show-more-btn {
+    background: #fff;
+    border: none;
+    color: #0bc466;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: -2px;
+    padding: 20px 15px;
+    text-transform: uppercase;
+    width: 100%
+}
+
+.instrument-specification .instrument-specification-table .show-more-btn svg {
+    margin: 0 0 0 15px
+}
+
+.instrument-specification .instrument-specification-table .show-more-btn .hide-text {
+    display: none
+}
+
+.instrument-specification .instrument-specification-table .show-more-btn.show-hide-text .hide-text {
+    display: inline
+}
+
+.instrument-specification .instrument-specification-table .show-more-btn.show-hide-text .show-text {
+    display: none
+}
+
+.instrument-specification .instrument-specification-table .show-more-btn.show-hide-text svg {
+    transform: rotate(180deg)
+}
+
+.instrument-specification .instrument-specification-table .thead {
+    background: #fff url(/build/images/head1.c55604fd.png) no-repeat bottom;
+    background-size: contain;
+    margin: 0 -29px;
+    padding: 20px 29px 0;
+    position: relative
+}
+
+.instrument-specification .instrument-specification-table .thead:before {
+    background: #fff url(/build/images/headerL.8cc7b756.png) no-repeat bottom;
+    bottom: -46px;
+    content: "";
+    display: block;
+    height: 63px;
+    left: 0;
+    position: absolute;
+    width: 29px
+}
+
+.instrument-specification .instrument-specification-table .thead:after {
+    background: #fff url(/build/images/headerR.22696233.png) no-repeat bottom;
+    bottom: -46px;
+    content: "";
+    display: block;
+    height: 63px;
+    position: absolute;
+    right: 0;
+    width: 29px
+}
+
+.instrument-specification .instrument-specification-table .thead.is-stuck {
+    margin-top: 35px;
+    transition: margin .3s ease-in
+}
+
+.small-nav-active .instrument-specification .instrument-specification-table .thead.is-stuck {
+    margin-top: 0
+}
+
+.instrument-specification .instrument-specification-table .close-only {
+    background-color: #ffa82a;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 800;
+    padding: 2px 5px;
+    text-transform: uppercase
+}
+
+.instrument-specification .instrument-specification-footer {
+    font-size: 16px
+}
+
+.instrument-specification .instrument-specification-footer p {
+    color: rgba(0, 0, 0, .5);
+    font-size: 16px;
+    margin: 48px 0 28px
+}
+
+.instrument-specification .instrument-specification-footer a,
+.instrument-specification .instrument-specification-footer button {
+    color: #0bc466;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase
+}
+
+.instrument-specification .instrument-specification-footer a:hover,
+.instrument-specification .instrument-specification-footer button:hover {
+    color: #09a355
+}
+
+.instrument-specification .instrument-specification-footer a span,
+.instrument-specification .instrument-specification-footer button span {
+    color: rgba(0, 0, 0, .35);
+    font-size: 12px;
+    font-weight: 400
+}
+
+.instrument-specification .instrument-specification-footer a.pdf,
+.instrument-specification .instrument-specification-footer button.pdf {
+    background: url(/build/images/download.3ecf9030.svg) no-repeat 0 50%;
+    padding: 0 0 0 27px
+}
+
+.instrument-specification .instrument-specification-footer button {
+    background: url(/build/images/popup.3157005d.svg) no-repeat 0 50%;
+    min-height: 20px;
+    padding: 0 0 0 27px
+}
+
+.instrument-specification .instrument-specification-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.instrument-specification .instrument-specification-footer li {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 70px 0 0;
+    padding: 0
+}
+
+.instrument-specification .instrument-specification-footer li:last-child {
+    margin: 0
+}
+
+.instrument-specification .instrument-specification-empty {
+    display: none
+}
+
+.instrument-specification .instrument-specification-empty h2 {
+    color: #18181e;
+    text-transform: uppercase
+}
+
+.instrument-specification .instrument-specification-empty p {
+    color: rgba(24, 24, 30, .6);
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-search {
+    background: transparent url(/build/images/search.5283687a.svg) no-repeat 100% 50%
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-reset {
+    left: 0;
+    right: auto
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-select .dropdown-button,
+body[dir=rtl] .instrument-specification .instrument-specification-select select {
+    text-align: right
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-select .dropdown-button svg,
+body[dir=rtl] .instrument-specification .instrument-specification-select select svg {
+    left: 0;
+    margin: -3px 0 0 23px;
+    right: auto
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-select li button {
+    text-align: right
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-table-header h2 {
+    align-items: baseline;
+    display: flex
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-table-header h2>span {
+    margin: 0 5px 0 0
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-table-header svg {
+    left: 0;
+    margin: -5px 0 0 21px;
+    right: auto
+}
+
+body[dir=rtl] .instrument-specification .instrument-specification-footer a.pdf {
+    background: url(/build/images/download.3ecf9030.svg) no-repeat 100% 50%;
+    padding: 0 27px 0 0
+}
+
+.instrument-specification .instrument-specification-additional-text {
+    font-size: 16px;
+    margin: 40px 0 0
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid rgba(24, 24, 30, .08);
+    border-radius: 0;
+    color: #18181e
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    background: transparent;
+    color: #18181e;
+    line-height: 1;
+    padding: 0 24px;
+    position: relative;
+    text-align: left;
+    width: 100%
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    background: transparent url(/build/images/more-less_gray_small.983117ac.svg);
+    height: 6px;
+    margin: -3px 23px 0 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(180deg);
+    width: 10px
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none
+}
+
+.select2-container--default .select2-dropdown {
+    border: 1px solid rgba(24, 24, 30, .08);
+    border-radius: 0;
+    box-shadow: 0 12px 50px rgba(0, 20, 174, .07)
+}
+
+.select2-container--default .select2-dropdown--above {
+    margin-top: -10px
+}
+
+.select2-container--default .select2-dropdown--below {
+    margin-top: 10px
+}
+
+.select2-container--default .select2-dropdown .select2-search__field {
+    border: 1px solid rgba(24, 24, 30, .08)
+}
+
+.select2-container--default .select2-results__option {
+    background: transparent !important;
+    color: #18181e !important;
+    padding: 5px 24px;
+    transition: background-color .3s ease
+}
+
+.select2-container--default .select2-results__option--selected {
+    color: #0bc466 !important
+}
+
+.select2-container--default .select2-results__option:focus,
+.select2-container--default .select2-results__option:hover {
+    background-color: rgba(24, 24, 30, .08) !important
+}
+
+.select2-container--default .select2-selection__clear {
+    bottom: 100%;
+    margin: 0;
+    position: absolute;
+    right: 5px
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
+    transform: rotate(0)
+}
+
+body[dir=rtl] .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 0 24px;
+    text-align: right
+}
+
+body[dir=rtl] .select2-container--default .select2-selection--single .select2-selection__arrow {
+    left: 0;
+    margin: -3px 0 0 23px;
+    right: auto
+}
+
+body[dir=rtl] .select2-container--default .select2-selection__clear {
+    left: 5px;
+    right: auto
+}
+
+@media (min-width:1200px) {
+    .instrument-specification .country-row {
+        display: table-row;
+        vertical-align: middle
+    }
+
+    .instrument-specification .country-row div {
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+        display: table-cell;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        padding: 15px 15px 10px;
+        text-align: left;
+        vertical-align: middle;
+        width: 15%
+    }
+
+    .instrument-specification .country-row div span {
+        border: none;
+        color: rgba(24, 24, 30, .3);
+        text-transform: uppercase
+    }
+
+    .instrument-specification .country-row div.country-row-title {
+        font-size: 25px;
+        padding-left: 0;
+        width: 40%
+    }
+
+    .instrument-specification .country-row div.country-row-title span {
+        font-size: 18px
+    }
+
+    .instrument-specification .country-row.active div {
+        opacity: 0
+    }
+
+    .instrument-specification .country-row.active div.js-dont-hide {
+        border: none;
+        opacity: 1
+    }
+
+    .instrument-specification .instrument-specification-search,
+    .instrument-specification .instrument-specification-select .dropdown-button,
+    .instrument-specification .instrument-specification-select select {
+        font-size: 18px;
+        height: 56px
+    }
+
+    .instrument-specification .instrument-specification-select li button {
+        font-size: 18px;
+        padding: 14px 24px
+    }
+
+    .instrument-specification .instrument-specification-table-wrapper:last-child {
+        border: none
+    }
+
+    .instrument-specification .instrument-specification-table-wrapper.hide-border {
+        padding: 0 0 45px
+    }
+
+    .instrument-specification .instrument-specification-table-header h2 {
+        font-size: 36px
+    }
+
+    .instrument-specification .instrument-specification-table-header h2 span {
+        font-size: 18px
+    }
+
+    .instrument-specification .instrument-specification-table table {
+        table-layout: fixed
+    }
+
+    .instrument-specification .instrument-specification-table thead,
+    .instrument-specification .instrument-specification-table thead tr {
+        background: none
+    }
+
+    .instrument-specification .instrument-specification-table thead th {
+        border: none;
+        color: rgba(24, 24, 30, .3);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        padding: 0 15px 25px;
+        text-align: left;
+        text-transform: uppercase;
+        vertical-align: top
+    }
+
+    .instrument-specification .instrument-specification-table .table-shadow {
+        box-shadow: 0 12px 50px rgba(0, 20, 174, .07)
+    }
+
+    .instrument-specification .instrument-specification-table .table-scroll {
+        height: 463px;
+        overflow-y: scroll
+    }
+
+    .instrument-specification .instrument-specification-table .table-scroll::-webkit-scrollbar {
+        width: 3px
+    }
+
+    .instrument-specification .instrument-specification-table .table-scroll::-webkit-scrollbar-track {
+        background: transparent
+    }
+
+    .instrument-specification .instrument-specification-table .table-scroll::-webkit-scrollbar-thumb {
+        background: rgba(18, 30, 42, .392);
+        border-radius: 2px
+    }
+
+    .instrument-specification .instrument-specification-table tbody {
+        background: #fff
+    }
+
+    .instrument-specification .instrument-specification-table tbody tr {
+        background: none;
+        border-bottom: 1px solid rgba(24, 24, 30, .05)
+    }
+
+    .instrument-specification .instrument-specification-table tbody tr:last-child {
+        border: none
+    }
+
+    .instrument-specification .instrument-specification-table tbody.limit-instruments tr:nth-child(n+6) {
+        display: none
+    }
+
+    .instrument-specification .instrument-specification-table tbody td {
+        border: none;
+        color: #18181e;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 15px;
+        text-align: left
+    }
+
+    .instrument-specification .instrument-specification-table tbody td:first-child {
+        font-size: 16px;
+        font-weight: 800;
+        white-space: normal
+    }
+
+    .instrument-specification .instrument-specification-table tbody td.nowrap {
+        white-space: nowrap
+    }
+
+    .instrument-specification .instrument-specification-table tbody td.center {
+        text-align: center
+    }
+
+    .instrument-specification .instrument-specification-table tbody td a {
+        color: #18181e;
+        margin-right: 8px
+    }
+
+    .instrument-specification .instrument-specification-table tbody svg {
+        margin: 0
+    }
+
+    .instrument-specification .instrument-specification-table .show-more-btn {
+        border-top: 1px solid rgba(24, 24, 30, .05);
+        box-shadow: 0 12px 50px rgba(0, 20, 174, .07);
+        position: relative
+    }
+
+    .instrument-specification .instrument-specification-footer {
+        margin: 70px 0 180px
+    }
+
+    body[dir=rtl] .instrument-specification .instrument-specification-table tbody td,
+    body[dir=rtl] .instrument-specification .instrument-specification-table thead th {
+        text-align: right
+    }
+
+    .select2-container--default .select2-selection--single {
+        height: 56px
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 18px;
+        height: 56px;
+        line-height: 56px
+    }
+
+    .select2-container--default .select2-results__option {
+        font-size: 18px
+    }
+}
+
+@media (max-width:1199px) {
+    .container {
+        max-width: 924px
+    }
+
+    .instrument-specification .instrument-specification-wrapper {
+        margin-top: 10px
+    }
+
+    .instrument-specification .instrument-specification-header.fixed {
+        margin-top: 0
+    }
+
+    .instrument-specification .instrument-specification-search {
+        font-size: 16px;
+        height: 46px
+    }
+
+    .instrument-specification .instrument-specification-select .dropdown-button,
+    .instrument-specification .instrument-specification-select select {
+        font-size: 16px;
+        height: 46px;
+        line-height: 46px
+    }
+
+    .instrument-specification .instrument-specification-select li button {
+        font-size: 16px;
+        padding: 11px 24px
+    }
+
+    .instrument-specification .instrument-specification-table-wrapper.hide-border {
+        padding: 0 0 25px
+    }
+
+    .instrument-specification .instrument-specification-table-header h2 {
+        font-size: 27px
+    }
+
+    .instrument-specification .instrument-specification-table-header h2 span {
+        font-size: 16px
+    }
+
+    .instrument-specification .instrument-specification-table-header.fixed {
+        padding: 0 calc(50% - 450px)
+    }
+
+    .instrument-specification .instrument-specification-table .accordion-wrapper {
+        background: #fff;
+        box-shadow: 0 12px 50px rgba(0, 20, 174, .07)
+    }
+
+    .instrument-specification .instrument-specification-table .accordion-wrapper.no-shadow {
+        box-shadow: none
+    }
+
+    .instrument-specification .instrument-specification-table .card:not(:last-child) {
+        border-bottom: 1px solid rgba(24, 24, 30, .05)
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn {
+        background: #fff;
+        border: none;
+        color: #18181e;
+        font-size: 16px;
+        font-weight: 800;
+        padding: 20px;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn span {
+        color: rgba(24, 24, 30, .3);
+        font-size: 13px;
+        font-weight: 300
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn .close-only {
+        color: #fff;
+        font-size: 8px;
+        font-weight: 800;
+        margin-left: 5px;
+        vertical-align: middle
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn svg {
+        margin: -3px 20px 0 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: rotate(180deg)
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn.active svg {
+        transform: rotate(0)
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn.card-btn-big {
+        font-size: 20px;
+        font-weight: 400;
+        padding-right: 45px;
+        text-transform: none
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn.card-btn-big svg {
+        transform: rotate(0)
+    }
+
+    .instrument-specification .instrument-specification-table .card-btn.card-btn-big.active svg {
+        transform: rotate(180deg)
+    }
+
+    .instrument-specification .instrument-specification-table .card-body {
+        display: none;
+        position: relative;
+        z-index: 1
+    }
+
+    .instrument-specification .instrument-specification-table .card-body p {
+        font-size: 14px;
+        margin: 0 0 20px;
+        padding: 0 20px
+    }
+
+    .instrument-specification .instrument-specification-table .card-body .row {
+        margin: 0;
+        padding: 0 10px
+    }
+
+    .instrument-specification .instrument-specification-table .card-body [class^=col-] {
+        padding: 0 10px 20px
+    }
+
+    .instrument-specification .instrument-specification-table .card-body [class^=col-]:nth-child(5n) {
+        clear: left
+    }
+
+    .instrument-specification .instrument-specification-table .card-body .title {
+        color: rgba(24, 24, 30, .3);
+        display: block;
+        font-size: 12px;
+        margin: 0 0 5px;
+        text-transform: uppercase
+    }
+
+    .instrument-specification .instrument-specification-table .card-body .value {
+        color: #18181e;
+        display: block;
+        font-size: 14px
+    }
+
+    .instrument-specification .instrument-specification-table .card-body .value.related-market p {
+        margin: 0;
+        padding: 0
+    }
+
+    .instrument-specification .instrument-specification-table .card-body .view-more {
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0 20px 20px;
+        text-align: right;
+        text-transform: uppercase
+    }
+
+    .instrument-specification .instrument-specification-footer {
+        margin: 60px 0 80px
+    }
+
+    body[dir=rtl] .instrument-specification .instrument-specification-table .card-btn {
+        text-align: right
+    }
+
+    body[dir=rtl] .instrument-specification .instrument-specification-table .card-btn svg {
+        left: 0;
+        margin: -3px 0 0 20px;
+        right: auto
+    }
+
+    body[dir=rtl] .instrument-specification .instrument-specification-table .card-btn.card-btn-big {
+        padding-left: 45px;
+        padding-right: 20px
+    }
+
+    body[dir=rtl] .instrument-specification .instrument-specification-table .card-body .view-more {
+        text-align: left
+    }
+
+    .select2-container--default .select2-selection--single {
+        height: 46px
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 16px;
+        height: 46px;
+        line-height: 46px
+    }
+
+    .select2-container--default .select2-results__option {
+        font-size: 16px
+    }
+}
+
+@media (max-width:991px) {
+    .container {
+        max-width: 624px
+    }
+
+    .instrument-specification .instrument-specification-table .card-body [class^=col-]:nth-child(4n) {
+        clear: none
+    }
+
+    .instrument-specification .instrument-specification-table .card-body [class^=col-]:nth-child(odd) {
+        clear: left
+    }
+
+    .instrument-specification .instrument-specification-table-header.fixed {
+        padding: 0 calc(50% - 300px)
+    }
+
+    body[dir=rtl] .instrument-specification .instrument-specification-table .card-body [class^=col-]:nth-child(odd) {
+        clear: right
+    }
+}
+
+@media (max-width:767px) {
+    .instrument-specification .instrument-specification-select {
+        margin: 15px 0 0
+    }
+
+    .instrument-specification .instrument-specification-table-header.fixed {
+        padding: 0 10px
+    }
+}
+
+[data-simplebar] {
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative
+}
+
+.simplebar-wrapper {
+    height: inherit;
+    max-height: inherit;
+    max-width: inherit;
+    overflow: hidden;
+    width: inherit
+}
+
+.simplebar-mask {
+    direction: inherit;
+    height: auto !important;
+    overflow: hidden;
+    width: auto !important;
+    z-index: 0
+}
+
+.simplebar-mask,
+.simplebar-offset {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.simplebar-offset {
+    -webkit-overflow-scrolling: touch;
+    box-sizing: inherit !important;
+    direction: inherit !important;
+    resize: none !important
+}
+
+.simplebar-content-wrapper {
+    -ms-overflow-style: none;
+    box-sizing: border-box !important;
+    direction: inherit;
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    scrollbar-width: none;
+    width: auto
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    height: 0;
+    width: 0
+}
+
+.simplebar-content:after,
+.simplebar-content:before {
+    content: " ";
+    display: table
+}
+
+.simplebar-placeholder {
+    max-height: 100%;
+    max-width: 100%;
+    pointer-events: none;
+    width: 100%
+}
+
+.simplebar-height-auto-observer-wrapper {
+    box-sizing: inherit !important;
+    flex-basis: 0;
+    flex-grow: inherit;
+    flex-shrink: 0;
+    float: left;
+    height: 100%;
+    margin: 0;
+    max-height: 1px;
+    max-width: 1px;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+    z-index: -1
+}
+
+.simplebar-height-auto-observer {
+    box-sizing: inherit;
+    display: block;
+    height: 1000%;
+    left: 0;
+    min-height: 1px;
+    min-width: 1px;
+    opacity: 0;
+    top: 0;
+    width: 1000%;
+    z-index: -1
+}
+
+.simplebar-height-auto-observer,
+.simplebar-track {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute
+}
+
+.simplebar-track {
+    bottom: 0;
+    right: 0;
+    z-index: 1
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+    pointer-events: all
+}
+
+.simplebar-scrollbar {
+    left: 0;
+    min-height: 10px;
+    position: absolute;
+    right: 0
+}
+
+.simplebar-scrollbar:before {
+    background: #000;
+    border-radius: 7px;
+    content: "";
+    left: 2px;
+    opacity: 0;
+    position: absolute;
+    right: 2px;
+    transition: opacity .2s linear
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+    opacity: .5;
+    transition: opacity 0s linear
+}
+
+.simplebar-track.simplebar-vertical {
+    top: 0;
+    width: 11px
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    bottom: 2px;
+    top: 2px
+}
+
+.simplebar-track.simplebar-horizontal {
+    height: 11px;
+    left: 0
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+    height: 100%;
+    left: 2px;
+    right: 2px
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    height: 7px;
+    left: 0;
+    min-height: 0;
+    min-width: 10px;
+    right: auto;
+    top: 2px;
+    width: auto
+}
+
+[data-simplebar-direction=rtl] .simplebar-track.simplebar-vertical {
+    left: 0;
+    right: auto
+}
+
+.hs-dummy-scrollbar-size {
+    direction: rtl;
+    height: 500px;
+    opacity: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: fixed;
+    visibility: hidden;
+    width: 500px
+}
+
+.simplebar-hide-scrollbar {
+    -ms-overflow-style: none;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    scrollbar-width: none;
+    visibility: hidden
+}
+
+.modal-rollover-table .modal-content {
+    background: transparent
+}
+
+.rollover-table-wrapper {
+    background: #fff;
+    position: relative
+}
+
+.rollover-table-wrapper.show-info .rollover-table-info,
+.rollover-table-wrapper.show-info .rollover-table-title-question-mark:before {
+    display: block
+}
+
+.rollover-table-close {
+    display: block;
+    line-height: 16px;
+    position: absolute;
+    z-index: 1
+}
+
+.rollover-table-close,
+.rollover-table-close img {
+    height: 16px;
+    width: 16px
+}
+
+.rollover-table-title-wrapper {
+    position: relative
+}
+
+.rollover-table-title {
+    font-weight: 800;
+    margin: 0
+}
+
+.rollover-table-title-question-mark {
+    display: inline-block;
+    position: relative;
+    vertical-align: top
+}
+
+.rollover-table-title-question-mark img {
+    display: block
+}
+
+.rollover-table-title-question-mark:before {
+    border-bottom: 10px solid #f3f3f4;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    display: none;
+    left: -1px;
+    position: absolute
+}
+
+.rollover-table-info {
+    background-color: #f3f3f4;
+    border-radius: 6px;
+    display: none;
+    font-size: 14px;
+    left: 0;
+    line-height: 18px;
+    margin: 15px 0 0;
+    padding: 24px 76px 24px 24px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1
+}
+
+.rollover-table-info-close {
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 16px
+}
+
+.rollover-table-info-close img {
+    height: 16px;
+    width: 16px
+}
+
+.rollover-table-nav {
+    height: 24px;
+    margin: 0 0 36px
+}
+
+.rollover-table-next,
+.rollover-table-prev {
+    background-color: transparent;
+    border-radius: 50%;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+    transition: background-color .3s;
+    width: 24px
+}
+
+.rollover-table-next span,
+.rollover-table-prev span {
+    background-color: rgba(24, 24, 30, .6);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    height: 21px;
+    left: 50%;
+    line-height: 21px;
+    opacity: 0;
+    padding: 0 8px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, 5px);
+    transition: opacity .3s
+}
+
+.rollover-table-next:hover,
+.rollover-table-prev:hover {
+    background-color: rgba(24, 24, 30, .1)
+}
+
+.rollover-table-next:disabled,
+.rollover-table-prev:disabled {
+    opacity: .3
+}
+
+.rollover-table-prev img {
+    margin: -2px 2px 0 0;
+    transform: rotate(-90deg)
+}
+
+.rollover-table-next img {
+    margin: -2px 0 0 2px;
+    transform: rotate(90deg)
+}
+
+.rollover-table-from-to {
+    display: inline-block;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 5px;
+    pointer-events: none
+}
+
+.rollover-table tbody,
+.rollover-table thead {
+    display: block;
+    width: 100%
+}
+
+.rollover-table tbody tr {
+    border-bottom: 1px solid rgba(24, 24, 30, .05)
+}
+
+.rollover-table tbody tr:last-child {
+    border-bottom: none
+}
+
+.rollover-table tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%
+}
+
+.rollover-table tr:first-child td {
+    padding: 0 0 24px
+}
+
+.rollover-table td,
+.rollover-table th {
+    text-align: center
+}
+
+.rollover-table td:first-child,
+.rollover-table th:first-child {
+    text-align: initial
+}
+
+.rollover-table th {
+    color: #b9b9bb;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 0 24px;
+    text-transform: uppercase
+}
+
+.rollover-table td {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 24px 0
+}
+
+.rollover-table td:first-child {
+    font-weight: 800
+}
+
+.rollover-table .sort {
+    display: inline-block;
+    margin: 0 8px;
+    vertical-align: top
+}
+
+.rollover-table .sort:after,
+.rollover-table .sort:before {
+    background: no-repeat 50% url(/build/images/sort.74e57a51.svg);
+    content: "";
+    display: block;
+    height: 6px;
+    opacity: .3;
+    width: 6px
+}
+
+.rollover-table .sort:after {
+    transform: rotate(180deg)
+}
+
+.rollover-table .tablesorter-headerAsc .sort:before,
+.rollover-table .tablesorter-headerDesc .sort:after {
+    opacity: 1
+}
+
+.simplebar-track.simplebar-vertical {
+    background-color: #f3f3f4;
+    border-radius: 3px;
+    right: -30px;
+    width: 6px
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    background-color: #b9b9bb;
+    border-radius: 3px;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    right: 0;
+    top: 0;
+    width: 6px
+}
+
+body[dir=rtl] .rollover-table-title-wrapper {
+    padding: 0 0 0 30px
+}
+
+body[dir=rtl] .rollover-table-info {
+    padding: 24px 24px 24px 76px
+}
+
+body[dir=rtl] .rollover-table-info-close {
+    left: 24px;
+    right: auto
+}
+
+body[dir=rtl] .simplebar-track.simplebar-vertical {
+    left: -30px;
+    right: auto
+}
+
+@media (min-width:992px) {
+    .modal-rollover-table .modal-dialog {
+        max-width: 804px;
+        width: 804px
+    }
+
+    .rollover-table-wrapper {
+        border: 1px solid #979797;
+        border-radius: 12px;
+        height: 707px;
+        padding: 48px;
+        width: 804px
+    }
+
+    .rollover-table-close {
+        right: 48px;
+        top: 58px
+    }
+
+    .rollover-table-title-wrapper {
+        margin: 0 0 22px;
+        padding: 0 30px 0 0
+    }
+
+    .rollover-table-title {
+        font-size: 30px;
+        line-height: 39px
+    }
+
+    .rollover-table-title-question-mark {
+        height: 22px;
+        line-height: 22px;
+        margin: 8px 5px 0;
+        width: 22px
+    }
+
+    .rollover-table-title-question-mark img {
+        height: 22px;
+        width: 22px
+    }
+
+    .rollover-table-title-question-mark:before {
+        top: 36px
+    }
+
+    .rollover-table-next:hover span {
+        opacity: 1
+    }
+
+    .rollover-table tbody {
+        max-height: 444px
+    }
+
+    body[dir=rtl] .rollover-table-close {
+        left: 48px;
+        right: auto
+    }
+}
+
+@media (max-width:991px) {
+    .modal-rollover-table .modal-dialog {
+        margin: 0;
+        max-width: 100%;
+        min-height: 100%;
+        width: 100%
+    }
+
+    .modal-rollover-table .modal-content {
+        min-height: 100%
+    }
+
+    .rollover-table-wrapper {
+        min-height: 100%;
+        padding: 24px;
+        width: 100%
+    }
+
+    .rollover-table-close {
+        left: 24px;
+        top: 27px
+    }
+
+    .rollover-table-title-wrapper {
+        margin: 0 0 36px;
+        padding: 0 20px
+    }
+
+    .rollover-table-title {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center
+    }
+
+    .rollover-table-title-question-mark {
+        height: 16px;
+        line-height: 16px;
+        margin: 4px 5px 0;
+        width: 16px
+    }
+
+    .rollover-table-title-question-mark img {
+        height: 16px;
+        width: 16px
+    }
+
+    .rollover-table-title-question-mark:before {
+        top: 26px
+    }
+
+    .rollover-table-nav {
+        display: flex
+    }
+
+    .rollover-table-from-to {
+        text-align: center;
+        width: calc(100% - 48px)
+    }
+
+    body[dir=rtl] .rollover-table-close {
+        left: auto;
+        right: 24px
+    }
+}

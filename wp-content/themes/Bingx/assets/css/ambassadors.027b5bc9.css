@@ -1,0 +1,673 @@
+.breadcrumb {
+    display: none !important
+}
+
+.ambassadors {
+    overflow: hidden
+}
+
+.ambassadors,
+.ambassadors h1,
+.ambassadors h2,
+.ambassadors h3,
+.ambassadors p {
+    color: #18181e
+}
+
+.ambassadors-gradient {
+    background: linear-gradient(1turn, rgba(24, 24, 30, .05), rgba(40, 126, 255, 0))
+}
+
+.ambassadors-btn {
+    border-width: 1px;
+    padding: 15px 21px;
+    text-transform: none
+}
+
+.ambassadors-btn img {
+    margin: 0 3px
+}
+
+.ambassadors-key-visual {
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), rgba(24, 24, 30, .05));
+    margin: 0 0 64px
+}
+
+.ambassadors-key-visual img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%
+}
+
+.ambassadors-box,
+.ambassadors-main,
+.ambassadors-top {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.ambassadors-top {
+    margin: 0 0 96px;
+    padding: 0 100px
+}
+
+.ambassadors-top h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 82px;
+    padding: 0 100px 0 0
+}
+
+.ambassadors-top p {
+    font-size: 24px;
+    line-height: 35px
+}
+
+.ambassadors-main {
+    border-radius: 16px;
+    height: 533px;
+    margin: 0 0 96px;
+    overflow: hidden;
+    position: relative;
+    background: #0e0e45;
+}
+
+.ambassadors-main>img {
+    align-self: end;
+    margin: 0 20px;
+    max-width: 100%
+}
+
+.ambassadors-main-bg,
+.ambassadors-main-bg-mobile {
+    background: url(/build/images/main.ca1afadf.png) 50% no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.ambassadors-main-bg-mobile {
+    background: url(/build/images/mobile_main.a260451a.png) 50% no-repeat;
+    background-size: cover
+}
+
+.ambassadors-main-text {
+    padding: 0 100px
+}
+
+.ambassadors-main-text h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 61px;
+    margin: 0 0 16px
+}
+
+.ambassadors-main-text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 32px
+}
+
+.ambassadors-main-btns {
+    grid-column-gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.ambassadors-boxes {
+    margin: 0 0 192px;
+    padding: 0 100px
+}
+
+.ambassadors-box {
+    margin: 0 0 64px
+}
+
+.ambassadors-box img {
+    border-radius: 16px;
+    max-width: 100%
+}
+
+.ambassadors-box h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 41px;
+    margin: 0 0 16px
+}
+
+.ambassadors-box p {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 32px
+}
+
+.ambassadors-box.odd .ambassadors-box-text {
+    padding: 0 0 0 100px
+}
+
+.ambassadors-box.even img {
+    justify-self: end
+}
+
+.ambassadors-box.even .ambassadors-box-text {
+    padding: 0 100px 0 0
+}
+
+.ambassadors-numbers {
+    padding: 0 0 96px 100px
+}
+
+.ambassadors-numbers h2 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 82px;
+    margin: 0 0 64px
+}
+
+.ambassadors-numbers-content {
+    grid-column-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.ambassadors-numbers-description {
+    padding: 0 110px 0 0
+}
+
+.ambassadors-numbers-description p {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0 0 48px
+}
+
+.ambassadors-numbers-wrapper {
+    grid-column-gap: 10px;
+    grid-row-gap: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.ambassadors-number {
+    min-width: 0;
+    overflow: hidden
+}
+
+.ambassadors-number .number {
+    display: block;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 82px;
+    margin: 0 0 8px
+}
+
+.ambassadors-number p {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0
+}
+
+.ambassadors-values {
+    margin: 96px 0;
+    padding: 0 100px
+}
+
+.ambassadors-values h2 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 82px;
+    margin: 0 0 32px
+}
+
+.ambassadors-values p {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0 0 64px;
+    max-width: 660px
+}
+
+.ambassadors-values-boxes {
+    grid-column-gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.ambassadors-values-box {
+    background: rgba(24, 24, 30, .02);
+    border-radius: 16px;
+    padding: 32px 27px;
+    text-align: center
+}
+
+.ambassadors-values-box img {
+    display: block;
+    margin: 0 auto 32px
+}
+
+.ambassadors-values-box h3 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 41px;
+    margin: 0 0 16px
+}
+
+.ambassadors-values-box p {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0
+}
+
+.ambassadors-video {
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10001
+}
+
+.ambassadors-video-wrapper {
+    height: 90%;
+    left: 5%;
+    position: absolute;
+    top: 5%;
+    width: 90%
+}
+
+.ambassadors-video-wrapper iframe {
+    border: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.ambassadors-video-close {
+    background: url(/build/images/close.768b2517.png) no-repeat 50%;
+    background-size: cover;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    width: 15px
+}
+
+body[dir=rtl] .ambassadors-top h1 {
+    padding: 0 0 0 100px
+}
+
+body[dir=rtl] .ambassadors-main-bg {
+    transform: scaleX(-1)
+}
+
+body[dir=rtl] .ambassadors-box.odd .ambassadors-box-text {
+    padding: 0 100px 0 0
+}
+
+body[dir=rtl] .ambassadors-box.even .ambassadors-box-text {
+    padding: 0 0 0 100px
+}
+
+body[dir=rtl] .ambassadors-numbers {
+    padding: 0 100px 96px 0
+}
+
+body[dir=rtl] .ambassadors-numbers-description {
+    padding: 0 0 0 110px
+}
+
+@media (max-width:1080px) {
+    .ambassadors-key-visual {
+        margin: 0 0 40px
+    }
+
+    .ambassadors-key-visual img {
+        max-width: 470px;
+        width: 100%
+    }
+
+    .ambassadors-top {
+        margin: 0 0 40px;
+        padding: 0 72px
+    }
+
+    .ambassadors-top h1 {
+        font-size: 40px;
+        line-height: 52px;
+        padding: 0 32px 0 0
+    }
+
+    .ambassadors-top p {
+        font-size: 16px;
+        line-height: 20px
+    }
+
+    .ambassadors-main {
+        height: 337px;
+        margin: 0 12px 40px
+    }
+
+    .ambassadors-main>img {
+        height: 310px;
+        margin: 0 auto
+    }
+
+    .ambassadors-main-text {
+        padding: 0 60px
+    }
+
+    .ambassadors-main-text h2 {
+        font-size: 32px;
+        line-height: 44px
+    }
+
+    .ambassadors-main-text p {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 0 16px
+    }
+
+    .ambassadors-main-btns {
+        grid-column-gap: 8px
+    }
+
+    .ambassadors-main-btns .ambassadors-btn {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px
+    }
+
+    .ambassadors-boxes {
+        margin: 0 0 80px;
+        padding: 0 20px
+    }
+
+    .ambassadors-box {
+        grid-column-gap: 56px;
+        margin: 0 0 40px
+    }
+
+    .ambassadors-box h2 {
+        font-size: 32px;
+        line-height: 41px;
+        margin: 0 0 8px
+    }
+
+    .ambassadors-box p {
+        font-size: 14px;
+        line-height: 23px;
+        margin: 0 0 24px
+    }
+
+    .ambassadors-box.even .ambassadors-box-text,
+    .ambassadors-box.odd .ambassadors-box-text {
+        padding: 0
+    }
+
+    .ambassadors-numbers {
+        padding: 0 0 40px 28px
+    }
+
+    .ambassadors-numbers h2 {
+        font-size: 40px;
+        line-height: 51px;
+        margin: 0 0 32px
+    }
+
+    .ambassadors-numbers-description {
+        padding: 0 50px 0 0
+    }
+
+    .ambassadors-numbers-description p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 32px
+    }
+
+    .ambassadors-numbers-wrapper {
+        grid-row-gap: 32px
+    }
+
+    .ambassadors-number .number {
+        font-size: 40px;
+        line-height: 51px;
+        margin: 0 0 4px
+    }
+
+    .ambassadors-number p {
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .ambassadors-values {
+        margin: 40px 0;
+        padding: 0 44px
+    }
+
+    .ambassadors-values h2 {
+        font-size: 40px;
+        line-height: 51px;
+        margin: 0 0 16px
+    }
+
+    .ambassadors-values p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 32px;
+        max-width: 440px
+    }
+
+    .ambassadors-values-box {
+        padding: 24px 16px 16px
+    }
+
+    .ambassadors-values-box img {
+        height: 40px;
+        margin: 0 auto 16px
+    }
+
+    .ambassadors-values-box h3 {
+        font-size: 24px;
+        line-height: 31px
+    }
+
+    .ambassadors-values-box p {
+        font-size: 12px;
+        line-height: 16px
+    }
+
+    body[dir=rtl] .ambassadors-top h1 {
+        padding: 0 0 0 32px
+    }
+
+    body[dir=rtl] .ambassadors-box.even .ambassadors-box-text,
+    body[dir=rtl] .ambassadors-box.odd .ambassadors-box-text {
+        padding: 0
+    }
+
+    body[dir=rtl] .ambassadors-numbers {
+        padding: 0 28px 40px 0
+    }
+
+    body[dir=rtl] .ambassadors-numbers-description {
+        padding: 0 0 0 50px
+    }
+}
+
+@media (max-width:767px) {
+    .ambassadors-key-visual {
+        margin: 0 0 32px
+    }
+
+    .ambassadors-key-visual img {
+        max-width: 95%;
+        width: 100%
+    }
+
+    .ambassadors-top {
+        display: block;
+        margin: 0 0 32px;
+        padding: 0 12px
+    }
+
+    .ambassadors-top h1 {
+        font-size: 32px;
+        line-height: 41px;
+        padding: 0 24px 0 0
+    }
+
+    .ambassadors-top p {
+        font-size: 14px;
+        line-height: 20px
+    }
+
+    .ambassadors-main {
+        display: block;
+        height: auto;
+        margin: 0 12px 32px
+    }
+
+    .ambassadors-main>img {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+        width: 100%
+    }
+
+    .ambassadors-main-text {
+        padding: 24px 32px 0
+    }
+
+    .ambassadors-main-text h2 {
+        font-size: 24px;
+        line-height: 44px
+    }
+
+    .ambassadors-main-text p {
+        margin: 0 0 24px
+    }
+
+    .ambassadors-boxes {
+        margin: 0 0 56px;
+        padding: 0 12px
+    }
+
+    .ambassadors-box {
+        display: block;
+        margin: 0 0 32px
+    }
+
+    .ambassadors-box img {
+        margin: 0 0 24px;
+        width: 100%
+    }
+
+    .ambassadors-box h2 {
+        font-size: 24px;
+        line-height: 32px
+    }
+
+    .ambassadors-numbers {
+        padding: 0 0 24px 12px
+    }
+
+    .ambassadors-numbers h2 {
+        font-size: 32px;
+        margin: 0 0 24px
+    }
+
+    .ambassadors-numbers-content {
+        display: block
+    }
+
+    .ambassadors-numbers-description {
+        padding: 0
+    }
+
+    .ambassadors-numbers-description p {
+        font-size: 14px;
+        margin: 0 0 16px
+    }
+
+    .ambassadors-numbers-wrapper {
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        margin: 0 0 24px
+    }
+
+    .ambassadors-number .number {
+        margin: 0 0 8px
+    }
+
+    .ambassadors-number p {
+        font-size: 14px
+    }
+
+    .ambassadors-values {
+        margin: 32px 0;
+        padding: 0 12px
+    }
+
+    .ambassadors-values h2 {
+        font-size: 32px;
+        line-height: 41px;
+        margin: 0 0 24px
+    }
+
+    .ambassadors-values p {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 0 24px;
+        max-width: none
+    }
+
+    .ambassadors-values-boxes {
+        display: block
+    }
+
+    .ambassadors-values-box {
+        margin: 0 0 24px;
+        padding: 24px 32px 28px
+    }
+
+    .ambassadors-values-box p {
+        font-size: 14px
+    }
+
+    body[dir=rtl] .ambassadors-top h1 {
+        padding: 0 0 0 24px
+    }
+
+    body[dir=rtl] .ambassadors-numbers {
+        padding: 0 12px 24px 0
+    }
+
+    body[dir=rtl] .ambassadors-numbers-description {
+        padding: 0
+    }
+}
+
+@media only screen and (min-device-pixel-ratio:2),
+only screen and (min-resolution:192dpi) {
+    .ambassadors-main-bg {
+        background: url(/build/images/main@2x.d4337349.png) 50% no-repeat;
+        background-size: cover
+    }
+
+    .ambassadors-main-bg-mobile {
+        background: url(/build/images/mobile_main@2x.996a757c.png) 50% no-repeat;
+        background-size: cover
+    }
+}

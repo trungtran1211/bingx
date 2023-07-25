@@ -1,0 +1,71 @@
+.trading-conditions-menu {
+  margin: 0 -15px 70px;
+}
+.trading-conditions-menu ul {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.trading-conditions-menu a,
+.trading-conditions-menu h1 {
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0 15px;
+  padding: 13px 0;
+}
+.trading-conditions-menu a {
+  color: rgba(0, 0, 0, 0.45);
+  transition: color 0.3s ease;
+}
+.trading-conditions-menu a:hover {
+  color: #0bc466;
+}
+.trading-conditions-menu h1 {
+  color: #0bc466;
+  font-weight: 700;
+  position: relative;
+}
+.trading-conditions-menu h1:after {
+  background: #0bc466;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 43px;
+}
+body[dir="rtl"] .trading-conditions-menu h1:after {
+  left: auto;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .trading-conditions-menu {
+    margin: 0 -15px 35px;
+    position: relative;
+  }
+  .trading-conditions-menu:after {
+    background: rgba(24, 24, 30, 0.05);
+    bottom: 1px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .trading-conditions-menu ul {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .trading-conditions-menu a,
+  .trading-conditions-menu h1 {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .trading-conditions-menu a:after,
+  .trading-conditions-menu h1:after {
+    height: 3px;
+    width: 100%;
+  }
+}

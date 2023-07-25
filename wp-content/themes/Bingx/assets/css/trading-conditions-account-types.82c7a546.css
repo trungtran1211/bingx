@@ -1,0 +1,261 @@
+.account-types {
+  margin-bottom: 150px;
+}
+.account-types table {
+  table-layout: fixed;
+}
+.account-types table .btn {
+  margin-bottom: -50px;
+}
+.account-types table span {
+  background: transparent url(/build/images/check.0906d297.svg) no-repeat 50%;
+  display: inline-block;
+  height: 11px;
+  margin: 0 10px;
+  width: 14px;
+}
+.account-types table small {
+  color: rgba(24, 24, 30, 0.3);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.account-types table a:not(.btn) {
+  color: #0bc466;
+  text-decoration: underline;
+}
+.account-types tr {
+  position: relative;
+  z-index: 10;
+}
+.account-types tr:first-child th.selected {
+  border-width: 2px 2px 0;
+}
+.account-types tr:last-child td:nth-child(3),
+.account-types tr:last-child td:nth-child(5),
+.account-types tr:last-child td:nth-child(7) {
+  box-shadow: 0 12px 50px rgba(0, 20, 174, 0.07);
+}
+.account-types tr:last-child td.selected {
+  border-width: 0 2px 2px;
+}
+.account-types tr:nth-child(odd) td:nth-child(3),
+.account-types tr:nth-child(odd) td:nth-child(5),
+.account-types tr:nth-child(odd) td:nth-child(7) {
+  background: #fafafa;
+}
+.account-types td,
+.account-types th {
+  border: none;
+  line-height: 1.1;
+  margin: 0;
+  text-align: center;
+  width: 31.5%;
+}
+.account-types td:first-child,
+.account-types th:first-child {
+  text-align: left;
+}
+.account-types td:nth-child(2),
+.account-types td:nth-child(4),
+.account-types td:nth-child(6),
+.account-types th:nth-child(2),
+.account-types th:nth-child(4),
+.account-types th:nth-child(6) {
+  padding: 0;
+  width: 2.7%;
+}
+.account-types td:nth-child(3),
+.account-types td:nth-child(5),
+.account-types td:nth-child(7),
+.account-types th:nth-child(3),
+.account-types th:nth-child(5),
+.account-types th:nth-child(7) {
+  background: #fff;
+}
+.account-types td.selected,
+.account-types th.selected {
+  border-color: #0bc466;
+  border-style: solid;
+  border-width: 0 2px;
+}
+.account-types td.dynamic-btns-wrapper .btn,
+.account-types th.dynamic-btns-wrapper .btn {
+  display: none;
+}
+.account-types th {
+  color: #18181e;
+  padding: 40px 15px;
+}
+.account-types th:nth-child(3),
+.account-types th:nth-child(5),
+.account-types th:nth-child(7) {
+  box-shadow: 0 12px 50px rgba(0, 20, 174, 0.07);
+}
+.account-types th.selected {
+  color: #0bc466;
+}
+.account-types th h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.account-types td {
+  color: rgba(24, 24, 30, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px;
+}
+.account-types td:first-child {
+  padding: 15px 15px 15px 0;
+}
+.account-types td:nth-child(3),
+.account-types td:nth-child(5),
+.account-types td:nth-child(7) {
+  box-shadow: 0 12px 12px rgba(0, 20, 174, 0.07);
+  color: #18181e;
+}
+.account-types .account-types-table-footer {
+  font-size: 16px;
+}
+.account-types .account-types-table-footer p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  margin: 48px 0 28px;
+}
+.account-types .account-types-table-footer a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.account-types .account-types-table-footer a span {
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+  font-weight: 400;
+}
+.account-types .account-types-table-footer a.pdf {
+  background: url(/build/images/download.3ecf9030.svg) no-repeat 0 50%;
+  padding: 0 0 0 27px;
+}
+.account-types .account-types-table-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.account-types .account-types-table-footer li {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 70px 0 0;
+  padding: 0;
+}
+.account-types .account-types-table-footer li:last-child {
+  margin: 0;
+}
+body[dir="rtl"] .account-types td:first-child {
+  text-align: right;
+}
+body[dir="rtl"] .account-types .account-types-table-footer a.pdf {
+  background: url(/build/images/download.3ecf9030.svg) no-repeat 100% 50%;
+  padding: 0 27px 0 0;
+}
+@media (min-width: 1200px) {
+  .account-types .account-types-table-footer {
+    margin: 70px 0 0;
+  }
+}
+@media (max-width: 1199px) {
+  .account-types .account-types-table-footer {
+    margin: 60px 0 0;
+  }
+}
+@media (max-width: 991px) {
+  .account-types {
+    margin-bottom: 75px;
+  }
+  .account-types .account-types-type {
+    background: #fff;
+    box-shadow: 0 12px 50px rgba(0, 20, 174, 0.07);
+    margin: 0 0 70px;
+  }
+  .account-types .account-types-type.selected {
+    border: 2px solid #0bc466;
+  }
+  .account-types .account-types-type-row {
+    margin: 0;
+    overflow: hidden;
+  }
+  .account-types .account-types-type-row:nth-child(odd) {
+    background: #fafafa;
+  }
+  .account-types .account-types-type-row:first-child {
+    margin: 30px 0 0;
+  }
+  .account-types .account-types-type-col {
+    color: rgba(24, 24, 30, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    padding: 15px;
+  }
+  .account-types .account-types-type-col:nth-child(2n) {
+    color: #18181e;
+  }
+  .account-types .account-types-type-col a {
+    text-decoration: underline;
+  }
+  .account-types .account-types-type-col span {
+    background: transparent url(/build/images/check.0906d297.svg) no-repeat 50%;
+    display: inline-block;
+    height: 11px;
+    margin: 0 10px;
+    width: 14px;
+  }
+  .account-types .account-types-type-col small {
+    color: rgba(24, 24, 30, 0.3);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .account-types .account-types-type-header {
+    padding: 30px 15px 0;
+    text-align: center;
+  }
+  .account-types .account-types-type-header h2 {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .account-types .account-types-type-header h2.green {
+    color: #0bc466;
+  }
+  .account-types .account-types-type-header h2 svg {
+    margin: 8px 0 0 10px;
+    transition: transform 0.3s ease;
+    vertical-align: top;
+  }
+  .account-types .account-types-type-header h2.collapsed svg {
+    transform: rotate(180deg);
+  }
+  .account-types .account-types-type-btn-wrapper {
+    padding: 15px;
+    text-align: center;
+  }
+  .account-types .account-types-type-btn-wrapper .dynamic-btns-wrapper .btn,
+  .account-types .account-types-type-btn-wrapper.dynamic-btns-wrapper .btn {
+    display: none;
+  }
+  .account-types .btn {
+    margin-bottom: -55px;
+    max-width: 285px;
+    padding: 17px;
+    width: 100%;
+  }
+  body[dir="rtl"] .account-types .account-types-type-header h2 svg {
+    margin: 8px 10px 0 0;
+  }
+}

@@ -871,77 +871,54 @@ get_header(); ?>
             </div>
         </section>
 
-
-
         <div class="container">
 
             <div class="interested">
                 <h2 class="interested-header">Có thể bạn sẽ quan tâm đến:</h2>
                 <div class="row">
-                    <div class="col-md-4 interested-col">
-                        <a href="#" id="homePage_btn_goToEducation_interestedBoxes"
-                            class="js-gtm-interested-education">
-                            <div class="interested-box">
-                                <div class="interested-img-wrapper">
-                                    <div class="interested-img interested-img-1"></div>
+                <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'posts_per_page' => '5',
+                            'tax_query' => [
+                                [
+                                    'taxonomy' => 'category',
+                                    'terms' => 4,
+                                ] 
+                            ],
+                        );
+                        $post_query = new WP_Query($args);
+
+                        if($post_query->have_posts() ) {
+                            while($post_query->have_posts() ) {
+                                    $post_query->the_post();
+                            ?>   
+                                <div class="col-md-4 interested-col">
+                                    <a href="<?php the_permalink() ?>" id="homePage_btn_goToEducation_interestedBoxes"
+                                        class="js-gtm-interested-education">
+                                        <div class="interested-box">
+                                            <div class="interested-img-wrapper">
+                                                <div class="interested-img interested-img-1">
+                                                <?php the_post_thumbnail() ?>
+                                                </div>
+                                            </div>
+                                            <div class="interested-content">
+                                                <h3 class="interested-content-header"><?php the_title(); ?></h3>
+                                                
+                                            </div>
+                                            <div class="interested-content-more">
+                                                Tìm hiểu thêm
+                                                <img class="lazyload"
+                                                    data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/next-prev_green.0210052b.svg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="interested-content">
-                                    <h3 class="interested-content-header">Đào tạo</h3>
-                                    <p class="interested-content-text">Hướng dẫn sử dụng nền tảng giao dịch, Trung tâm
-                                        đào tạo kiến thức giao dịch tổng hợp và hơn thế nữa.</p>
-                                </div>
-                                <div class="interested-content-more">
-                                    Tìm hiểu thêm
-                                    <img class="lazyload"
-                                        data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/next-prev_green.0210052b.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 interested-col">
-                        <a href="#"
-                            id="homePage_btn_goToMarketAnalysis_interestedBoxes"
-                            class="js-gtm-interested-market-analyst">
-                            <div class="interested-box">
-                                <div class="interested-img-wrapper">
-                                    <div class="interested-img interested-img-2"></div>
-                                </div>
-                                <div class="interested-content">
-                                    <h3 class="interested-content-header">Phân tích thị trường</h3>
-                                    <p class="interested-content-text">Phân tích của chuyên gia về các biến động thị
-                                        trường</p>
-                                </div>
-                                <div class="interested-content-more">
-                                    Tìm hiểu thêm
-                                    <img class="lazyload"
-                                        data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/next-prev_green.0210052b.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 interested-col">
-                        <a href="#" id="homePage_btn_goToWebinars_interestedBoxes"
-                            class="js-gtm-interested-webinars">
-                            <div class="interested-box">
-                                <div class="interested-img-wrapper">
-                                    <div class="interested-img interested-img-3"></div>
-                                </div>
-                                <div class="interested-content">
-                                    <h3 class="interested-content-header">Webinar</h3>
-                                    <p class="interested-content-text">Cải thiện kỹ năng giao dịch học online thoải mái
-                                        ở bất cứ đâu</p>
-                                </div>
-                                <div class="interested-content-more">
-                                    Tìm hiểu thêm
-                                    <img class="lazyload"
-                                        data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/next-prev_green.0210052b.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            <?php
+                        }
+                    }
+                ?>
                 </div>
             </div>
 
@@ -956,69 +933,8 @@ get_header(); ?>
                                     cần phải có margin call?</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="links-show-hide">
-                        <button class="list-show">
-                            Thể hiện
-                            <img class="lazyload"
-                                data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/more-less_green_small.6abfc4a0.svg"
-                                alt="">
-                        </button>
-                        <button class="list-hide">
-                            ẨN BỚT
-                            <img class="lazyload"
-                                data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/more-less_green_small.6abfc4a0.svg"
-                                alt="">
-                        </button>
-                    </div> -->
                 </div>
             </div>
-
-            <!-- <div class="company-news">
-                <h2>Thông báo từ BingX</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <a href="#">
-                            <div class=" company-news-box">
-                                <h3 class="company-news-title">Tạm ngưng giao dịch HKComp và CHNComp</h3>
-                                <div class="company-news-read-more">
-                                    Tìm hiểu thêm
-                                    <img data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
-                                        alt="" class="lazyload float-end">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="#">
-                            <div class=" company-news-box">
-                                <h3 class="company-news-title">Rollovers, Lịch Nghỉ Lễ Và Cổ Tức Trong Tuần Tiếp Theo:
-                                </h3>
-                                <div class="company-news-read-more">
-                                    Tìm hiểu thêm
-                                    <img data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
-                                        alt="" class="lazyload float-end">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <a href="#">
-                            <div class=" company-news-box">
-                                <h3 class="company-news-title">Rollover đối với LSGASOIL, VIX, VSTOXX</h3>
-                                <div class="company-news-read-more">
-                                    Tìm hiểu thêm
-                                    <img data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
-                                        alt="" class="lazyload float-end">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a href="#" class="float-end company-news-show-more js-view-more-aa">
-                    Các tin tức khác
-                </a>
-            </div> -->
-
         </div>
     </section>
 
@@ -1029,24 +945,6 @@ get_header(); ?>
                     <div class="iblock-open-account-text">
                         <h2>Đăng ký miễn phí</h2>
                         <p>Chỉ mất vài phút để bắt đầu giao dịch. Đơn giản và hoàn toàn miễn phí!</p>
-                        <!-- <div class="js-btns">
-                            <a href="#" id="btn_homePage_createDemo_openAccount"
-                                class="btn btn-green btn-big desktop">
-                                Khám phá nền tảng
-                            </a>
-                            <a href="#"
-                                data-utm-medium="footer" data-link-id="website_footer"
-                                id="btn_homePage_download_itunes_openAccount"
-                                class="btn btn-green btn-big os-ios os-apple js-dynamic-link">
-                                TẢI APP
-                            </a>
-                            <a href="#"
-                                data-utm-medium="footer" data-link-id="website_footer"
-                                id="btn_homePage_download_googleplay_openAccount"
-                                class="btn btn-green btn-big os-android os-windows js-dynamic-link">
-                                TẢI APP
-                            </a>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 iblock-open-account-img">

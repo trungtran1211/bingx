@@ -12,24 +12,6 @@
                         src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png"
                         alt="XTB&#x20;Online&#x20;Trading" width="97" height="28">
                 </div>
-                <!-- <div class="col-7 col-md-8 text-end">
-                    <ul class="list-inline m-0">
-                        <li class="list-inline-item">
-                            <a rel="nofollow" class="js-social-media-aa" data-social-media="Facebook"
-                                href="https&#x3A;&#x2F;&#x2F;www.facebook.com&#x2F;xtb" target="_blank">
-                                <img class="lazyload"
-                                    data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/facebook.fe49b4a2.svg"
-                                    alt="" width="16" height="16">
-                            </a>
-                        </li>
-                        <li class="list-inline-item d-none d-md-inline-block">
-                            <a class="js-footer-link-aa" href="#">Tin tức công ty</a>
-                        </li>
-                        <li class="list-inline-item d-none d-md-inline-block">
-                            <a class="js-footer-link-aa" href="#" target="_blank">Trở thành đối tác</a>
-                        </li>
-                    </ul>
-                </div> -->
             </div>
             <div class="row overall-footer-menu js-overall-footer-accordion">
                 <div class="col-lg overall-footer-menu-item">
@@ -40,14 +22,13 @@
                     </div>
                     <ul class="list-unstyled m-0 js-overall-footer-accordion-content">
                         <li>
-                            <a href="http://localhost/bingx/dsmagiaodich/">Danh sách mã giao dịch</a>
+                            <a href="<?php echo home_url("/dsmagiaodich"); ?>">Danh sách mã giao dịch</a>
                         </li>
                         <li>
-                            <a href="#">Thông tin tài khoản</a>
+                            <a href="<?php echo home_url("/infoAccount"); ?>">Thông tin tài khoản</a>
                         </li>
                         <li>
-                            <a href="#">Thông tin Sản
-                                phẩm</a>
+                            <a href="<?php echo home_url("/infoProduct"); ?>">Thông tin Sản phẩm</a>
                         </li>
                     </ul>
                 </div>
@@ -59,10 +40,10 @@
                     </div>
                     <ul class="list-unstyled m-0 js-overall-footer-accordion-content">
                         <li>
-                            <a href="#">Về BingX</a>
+                            <a href="<?php echo home_url("/about"); ?>">Về BingX</a>
                         </li>
                         <li>
-                            <a href="#">Đại sứ</a>
+                            <a href="<?php echo home_url("/daisu"); ?>">Đại sứ</a>
                         </li>
                     </ul>
                 </div>
@@ -74,10 +55,10 @@
                     </div>
                     <ul class="list-unstyled m-0 js-overall-footer-accordion-content">
                         <li>
-                            <a href="#" target="_blank">Tin tức</a>
+                            <a href="<?php echo home_url("/tintuc"); ?>" target="_blank">Tin tức</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Giá cổ phiếu</a>
+                            <a href="<?php echo home_url("/giacophieu"); ?>" target="_blank">Giá cổ phiếu</a>
                         </li>
                     </ul>
                 </div>

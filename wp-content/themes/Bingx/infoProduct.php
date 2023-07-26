@@ -6,6 +6,7 @@
  */
 get_header(); ?>
 
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/trading-conditions-instrument-specification.96c2358e.css"> 
 
     <main class="container">
         <article class="trading-conditions instrument-specification" id="instrumentSpecification">
@@ -431,7 +432,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <button class="show-more-btn js-show-more forex" data-target-type="forex">
-                                    <span class="show-text">xem tất cả</span>
+                                    
                                     <span class="hide-text">ẩn đi</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="10" height="10" viewBox="0 0 10 10">
@@ -500,7 +501,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/aud-cad">xem
+                                                ts/forex-trading/aud-cad">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -560,7 +561,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/aud-chf">xem
+                                                ts/forex-trading/aud-chf">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -620,7 +621,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/aud-jpy">xem
+                                                ts/forex-trading/aud-jpy">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -680,7 +681,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/aud-nzd">xem
+                                                ts/forex-trading/aud-nzd">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -740,7 +741,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/aud-usd">xem
+                                                ts/forex-trading/aud-usd">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -800,7 +801,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/cad-chf">xem
+                                                ts/forex-trading/cad-chf">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -860,7 +861,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/cad-jpy">xem
+                                                ts/forex-trading/cad-jpy">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -920,7 +921,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/chf-huf">xem
+                                                ts/forex-trading/chf-huf">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -980,7 +981,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/chf-jpy">xem
+                                                ts/forex-trading/chf-jpy">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1040,7 +1041,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/forex-trading/chf-pln">xem
+                                                ts/forex-trading/chf-pln">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1471,7 +1472,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <button class="show-more-btn js-show-more indices" data-target-type="indices">
-                                    <span class="show-text">xem tất cả</span>
+                                    
                                     <span class="hide-text">ẩn đi</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="10" height="10" viewBox="0 0 10 10">
@@ -1539,7 +1540,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/aus200">xem
+                                                ts/indices-trading/aus200">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1599,7 +1600,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/aut20">xem
+                                                ts/indices-trading/aut20">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1659,7 +1660,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/bracomp">xem
+                                                ts/indices-trading/bracomp">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1717,9 +1718,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/indices-trading/ch50cash">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/indices-trading/ch50cash">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1781,7 +1780,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/chncomp">xem
+                                                ts/indices-trading/chncomp">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1838,7 +1837,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/czkcash">xem
+                                                ts/indices-trading/czkcash">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1898,7 +1897,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/de30">xem
+                                                ts/indices-trading/de30">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -1958,7 +1957,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/eu50">xem
+                                                ts/indices-trading/eu50">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2018,7 +2017,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/fra40">xem
+                                                ts/indices-trading/fra40">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2080,7 +2079,7 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/trading-services/range-of-markets/indices-trading/hkcomp">xem
+                                                ts/indices-trading/hkcomp">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2506,7 +2505,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <button class="show-more-btn js-show-more commodities" data-target-type="commodities">
-                                    <span class="show-text">xem tất cả</span>
+                                    
                                     <span class="hide-text">ẩn đi</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="10" height="10" viewBox="0 0 10 10">
@@ -2571,9 +2570,7 @@ get_header(); ?>
                                                     <span class="value related-market">organized market</span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/aluminium">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/aluminium">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2632,9 +2629,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/bund10y">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/bund10y">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2692,9 +2687,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/cattle">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/cattle">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2752,9 +2745,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/cocoa">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/cocoa">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2812,9 +2803,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/coffee">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/coffee">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2870,9 +2859,7 @@ get_header(); ?>
                                                     <span class="value related-market">organized market</span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/copper">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/copper">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2930,9 +2917,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/corn">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/corn">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -2990,9 +2975,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/cotton">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/cotton">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -3048,9 +3031,7 @@ get_header(); ?>
                                                     <span class="value related-market">organized market</span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/emiss">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/emiss">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -3108,9 +3089,7 @@ get_header(); ?>
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/commodities-trading/gasoline">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/commodities-trading/gasoline">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -3560,7 +3539,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-PL" data-target-type="shares"
                                             data-target-country-symbol="PL">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -3987,7 +3966,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-BE" data-target-type="shares"
                                             data-target-country-symbol="BE">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -4416,7 +4395,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-PT" data-target-type="shares"
                                             data-target-country-symbol="PT">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -4845,7 +4824,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-US" data-target-type="shares"
                                             data-target-country-symbol="US">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -5273,7 +5252,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-NL" data-target-type="shares"
                                             data-target-country-symbol="NL">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -5702,7 +5681,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-IT" data-target-type="shares"
                                             data-target-country-symbol="IT">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -6131,7 +6110,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-NO" data-target-type="shares"
                                             data-target-country-symbol="NO">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -6560,7 +6539,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-FR" data-target-type="shares"
                                             data-target-country-symbol="FR">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -6989,7 +6968,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-FI" data-target-type="shares"
                                             data-target-country-symbol="FI">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -7282,7 +7261,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-CZ" data-target-type="shares"
                                             data-target-country-symbol="CZ">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -7711,7 +7690,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-CH" data-target-type="shares"
                                             data-target-country-symbol="CH">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -8140,7 +8119,7 @@ get_header(); ?>
                                         </div>
                                         <button class="show-more-btn js-show-more shares-SE" data-target-type="shares"
                                             data-target-country-symbol="SE">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -8568,7 +8547,7 @@ close_only.instruments">
                                         </div>
                                         <button class="show-more-btn js-show-more shares-ES" data-target-type="shares"
                                             data-target-country-symbol="ES">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -8997,7 +8976,7 @@ close_only.instruments">
                                         </div>
                                         <button class="show-more-btn js-show-more shares-UK_INT"
                                             data-target-type="shares" data-target-country-symbol="UK_INT">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -9426,7 +9405,7 @@ close_only.instruments">
                                         </div>
                                         <button class="show-more-btn js-show-more shares-UK" data-target-type="shares"
                                             data-target-country-symbol="UK">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -9855,7 +9834,7 @@ close_only.instruments">
                                         </div>
                                         <button class="show-more-btn js-show-more shares-DK" data-target-type="shares"
                                             data-target-country-symbol="DK">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -10284,7 +10263,7 @@ close_only.instruments">
                                         </div>
                                         <button class="show-more-btn js-show-more shares-DE" data-target-type="shares"
                                             data-target-country-symbol="DE">
-                                            <span class="show-text">xem tất cả</span>
+                                            
                                             <span class="hide-text">ẩn đi</span>
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10"
@@ -19322,7 +19301,7 @@ close_only.instruments">
                                     </div>
                                 </div>
                                 <button class="show-more-btn js-show-more etfcfd" data-target-type="etfcfd">
-                                    <span class="show-text">xem tất cả</span>
+                                    
                                     <span class="hide-text">ẩn đi</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="10" height="10" viewBox="0 0 10 10">
@@ -19380,9 +19359,7 @@ close_only.instruments">
                                                     <span class="value">1</span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a href="/vn/etf-cfd/2b76-de-1">xem tất cả</a>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="card">
@@ -19431,7 +19408,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/aaxj-us">xem tất cả</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -19481,8 +19458,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/agg-us">xem tất cả</a>
-                                            </div>
+                                                                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
@@ -19531,7 +19507,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/arkf-us">xem tất cả</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -19581,7 +19557,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/arkg-us">xem tất cả</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -19631,7 +19607,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/arkk-us">xem tất cả</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -19681,7 +19657,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/arkq-us">xem tất cả</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -19731,7 +19707,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/arkw-us">xem tất cả</a>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -19781,8 +19757,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/biv-us">xem tất cả</a>
-                                            </div>
+                                                                                            </div>
                                         </div>
                                     </div>
                                     <div class="card">
@@ -19831,8 +19806,7 @@ close_only.instruments">
                                                 </div>
                                             </div>
                                             <div class="view-more">
-                                                <a href="/vn/etf-cfd/bnd-us">xem tất cả</a>
-                                            </div>
+                                                                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -20305,7 +20279,7 @@ close_only.instruments">
                                 </div>
                                 <button class="show-more-btn js-show-more cryptocurrencies"
                                     data-target-type="cryptocurrencies">
-                                    <span class="show-text">xem tất cả</span>
+                                    
                                     <span class="hide-text">ẩn đi</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="10" height="10" viewBox="0 0 10 10">
@@ -20379,9 +20353,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/algorand">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/algorand">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20446,9 +20418,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/apecoin">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/apecoin">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20513,9 +20483,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/avalanche">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/avalanche">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20580,9 +20548,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/binancecoin">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/binancecoin">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20647,9 +20613,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/bitcoin">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/bitcoin">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20714,9 +20678,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/bitcoincash">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/bitcoincash">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20781,9 +20743,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/cardano">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/cardano">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20848,9 +20808,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/chainlink">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/chainlink">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20915,9 +20873,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/chiliz">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/chiliz">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -20982,9 +20938,7 @@ close_only.instruments">
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div class="view-more">
-                                                <a
-                                                    href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/cosmos">xem
+                                            <div c           href="/vn/trading-services/range-of-markets/cryptocurrencies-trading/cosmos">xem
                                                     tất cả</a>
                                             </div>
                                         </div>
@@ -21069,8 +21023,7 @@ close_only.instruments">
                 </div>
             </div>
             <div class="view-more">
-                <a href="{{{ route }}}">xem tất cả</a>
-            </div>
+           </div>
         </div>
     </div>
 </script>
@@ -21129,8 +21082,7 @@ close_only.instruments">
                 </div>
             </div>
             <div class="view-more">
-                <a href="{{{ route }}}">xem tất cả</a>
-            </div>
+           </div>
         </div>
     </div>
 </script>
@@ -21179,8 +21131,7 @@ close_only.instruments">
                 </div>
             </div>
             <div class="view-more">
-                <a href="{{{ route }}}">xem tất cả</a>
-            </div>
+           </div>
         </div>
     </div>
 </script>
@@ -21251,8 +21202,7 @@ close_only.instruments">
                 </div>
             </div>
             <div class="view-more">
-                <a href="{{{ route }}}">xem tất cả</a>
-            </div>
+           </div>
         </div>
     </div>
 </script>
@@ -21323,8 +21273,7 @@ close_only.instruments">
                 </div>
             </div>
             <div class="view-more">
-                <a href="{{{ route }}}">xem tất cả</a>
-            </div>
+           </div>
         </div>
     </div>
 </script>
@@ -21502,8 +21451,7 @@ close_only.instruments">
                 </div>
             </div>
             <div class="view-more">
-                <a href="{{{ route }}}">xem tất cả</a>
-            </div>
+           </div>
         </div>
     </div>
 </script>

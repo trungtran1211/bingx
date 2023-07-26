@@ -1630,7 +1630,8 @@ body[dir=rtl] .select2-container--default .select2-selection__clear {
 
 @media (max-width:991px) {
     .container {
-        max-width: 624px
+        max-width: 100% !important;
+        padding: 0 16px;
     }
 
     .instrument-specification .instrument-specification-table .card-body [class^=col-]:nth-child(4n) {

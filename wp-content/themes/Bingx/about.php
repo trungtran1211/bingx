@@ -126,7 +126,7 @@ get_header(); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <a id="homePage_btn_showForex_topKV" href="/vn/forex" class="js-gtm-offer-box-green">
+                        <a id="homePage_btn_showForex_topKV" href="<?php echo home_url("/dsmagiaodich"); ?>" class="js-gtm-offer-box-green">
                             <div class="offer-box offer-box-green">
                                 <h2 class="offer-box-title">Forex, Chỉ số, Thương phẩm</h2>
                                 <div class="offer-box-arrow">
@@ -149,7 +149,7 @@ get_header(); ?>
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a id="homePage_btn_showForex_topKV" href="/vn/shares" class="js-gtm-offer-box-blue">
+                        <a id="homePage_btn_showForex_topKV" href="<?php echo home_url("/cpCFD"); ?>" class="js-gtm-offer-box-blue">
                             <div class="offer-box offer-box-blue">
                                 <h2 class="offer-box-title">CFD Cổ phiếu &amp; ETF <br> không phí hoa hồng</h2>
                                 <div class="offer-box-arrow">
@@ -172,7 +172,7 @@ get_header(); ?>
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a id="homePage_btn_showForex_topKV" href="/vn/cryptocurrencies"
+                        <a id="homePage_btn_showForex_topKV" href="<?php echo home_url("/electronicMoney"); ?>"
                             class="js-gtm-offer-box-orange">
                             <div class="offer-box offer-box-orange">
                                 <h2 class="offer-box-title">Bitcoin &amp; và các đồng tiền điện tử khác (CFD)</h2>

@@ -1,0 +1,433 @@
+.breadcrumb li.active {
+    color: #0bc466
+}
+
+.knowledge-base.show-search .knowledge-base-header-close,
+.knowledge-base.show-search .knowledge-base-search {
+    display: block
+}
+
+.knowledge-base.show-search .knowledge-base-header-magnifer,
+.knowledge-base.show-search .knowledge-base-tags-wrapper {
+    display: none
+}
+
+.knowledge-base.no-results .knowledge-base-search-back,
+.knowledge-base.no-results .knowledge-base-search-no-results,
+.knowledge-base.show-results .knowledge-base-search-back,
+.knowledge-base.show-results .knowledge-base-search-results {
+    display: block
+}
+
+.knowledge-base-header {
+    margin: 0 0 25px
+}
+
+.knowledge-base-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0
+}
+
+.knowledge-base-header-close {
+    display: none
+}
+
+.knowledge-base-search {
+    display: none;
+    position: relative
+}
+
+.knowledge-base-search input {
+    background: #f6f6f6;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 18px 32px;
+    width: 100%
+}
+
+.knowledge-base-search input::placeholder {
+    color: #18181e
+}
+
+.knowledge-base-search button {
+    background: #18181e;
+    border-radius: 8px;
+    color: #fff;
+    display: none;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    padding: 10px 24px;
+    position: absolute;
+    right: 8px;
+    text-transform: uppercase;
+    top: 8px
+}
+
+.knowledge-base-search.show-btn button {
+    display: inline-block
+}
+
+.knowledge-base-search-suggest {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, .08);
+    margin: 8px 0 0;
+    padding: 0 24px;
+    position: absolute;
+    width: 100%;
+    z-index: 999
+}
+
+.knowledge-base-search-suggest li {
+    border-bottom: 1px solid hsla(0, 0%, 9%, .05);
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 24px 0;
+    position: relative
+}
+
+.knowledge-base-search-suggest li a {
+    color: inherit
+}
+
+.knowledge-base-search-suggest li:last-child {
+    border-bottom: none
+}
+
+.knowledge-base-search-back {
+    display: none;
+    padding: 18px 0 0
+}
+
+.knowledge-base-search-back button {
+    font-size: 16px;
+    line-height: 28px
+}
+
+.knowledge-base-search-back svg {
+    margin: 0 16px 0 0
+}
+
+.knowledge-base-search-results {
+    display: none;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31px;
+    padding: 24px 0 48px
+}
+
+.knowledge-base-search-no-results {
+    display: none;
+    padding: 80px 0 0
+}
+
+.knowledge-base-search-no-results h2 {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 41px;
+    margin: 0 0 32px
+}
+
+.knowledge-base-search-no-results p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0
+}
+
+.knowledge-base-search-no-results p u {
+    color: #287eff;
+    cursor: pointer
+}
+
+.knowledge-base-search-no-results img {
+    position: absolute;
+    top: -150px
+}
+
+.knowledge-base-tags {
+    -ms-overflow-style: none;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none
+}
+
+.knowledge-base-tags::-webkit-scrollbar {
+    display: none
+}
+
+.knowledge-base-tag {
+    border: 1px solid rgba(24, 24, 30, .1);
+    border-radius: 100px;
+    color: #18181e;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 8px 8px 0;
+    padding: 11px 18px
+}
+
+.knowledge-base-tag.active {
+    border-color: #0bc466;
+    color: #0bc466
+}
+
+.knowledge-base-articles {
+    background-color: #f6f6f6;
+    margin-top: 25px;
+    padding: 30px 0 40px
+}
+
+.knowledge-base-articles-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.knowledge-base-article-box {
+    color: inherit;
+    margin-bottom: 32px;
+    max-width: 33.33333%;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.knowledge-base-article-box:hover {
+    color: inherit;
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+
+.knowledge-base-article-box:first-child {
+    max-width: 100%
+}
+
+.knowledge-base-article-box:first-child .knowledge-base-article-box-wrapper {
+    border-radius: 0 12px 12px 0;
+    float: right;
+    height: 422px;
+    padding: 30px;
+    width: 34%
+}
+
+.knowledge-base-article-box:first-child .knowledge-base-article-box-img {
+    background-color: #fff;
+    border-radius: 12px 0 0 12px;
+    float: left;
+    height: 100%;
+    width: 66%
+}
+
+.knowledge-base-article-box:first-child .knowledge-base-article-box-img.placeholder-img {
+    background-image: url(/build/images/placeholder.b3d7d65e.png) !important
+}
+
+.knowledge-base-article-box:first-child .knowledge-base-article-box-text {
+    -webkit-line-clamp: 9;
+    max-height: 273px
+}
+
+.knowledge-base-article-box:first-child .knowledge-base-articles-read-more {
+    bottom: 30px
+}
+
+.knowledge-base-article-box-info {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 14px
+}
+
+.knowledge-base-article-box-img {
+    background-color: #fff;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px 6px 0 0;
+    height: 205px
+}
+
+.knowledge-base-article-box-img.placeholder-img {
+    background-image: url(/build/images/placeholder.b3d7d65e.png) !important
+}
+
+.knowledge-base-article-box-text {
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    max-height: 165px;
+    overflow: hidden
+}
+
+.knowledge-base-article-box-text h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    margin-bottom: 24px
+}
+
+.knowledge-base-article-box-text p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0
+}
+
+.knowledge-base-articles-read-more {
+    bottom: 25px;
+    color: #0bc466;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase
+}
+
+.knowledge-base-article-box-wrapper {
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    height: 297px;
+    padding: 25px
+}
+
+.knowledge-base-loader {
+    padding: 25px 0;
+    text-align: center
+}
+
+.knowledge-base-loader .loader {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity .3s
+}
+
+.knowledge-base-loader .loader.loading {
+    opacity: 1
+}
+
+body[dir=rtl] .knowledge-base-search button {
+    left: 8px;
+    right: auto
+}
+
+body[dir=rtl] .knowledge-base-search-back svg {
+    margin: 0 0 0 16px
+}
+
+body[dir=rtl] .knowledge-base-tag {
+    margin: 0 0 8px 8px
+}
+
+@media (max-width:991px) {
+    .knowledge-base-article-box {
+        margin-bottom: 27px;
+        max-width: 50%
+    }
+
+    .knowledge-base-article-box:first-child {
+        max-width: 100%
+    }
+
+    .knowledge-base-article-box:first-child .knowledge-base-article-box-wrapper {
+        height: 400px;
+        padding: 25px;
+        width: 50%
+    }
+
+    .knowledge-base-article-box:first-child .knowledge-base-article-box-img {
+        width: 50%
+    }
+
+    .knowledge-base-article-box:first-child .knowledge-base-articles-read-more {
+        bottom: 25px
+    }
+
+    .knowledge-base-article-box-wrapper {
+        height: 277px
+    }
+
+    .knowledge-base-article-box-img {
+        height: 193px
+    }
+
+    .knowledge-base-article-box-text {
+        max-height: 156px
+    }
+
+    .knowledge-base-article-box-text h2 {
+        margin-bottom: 16px
+    }
+}
+
+@media (max-width:767px) {
+    .knowledge-base-tags-wrapper {
+        margin: 0 -15px;
+        padding: 0 15px;
+        position: relative
+    }
+
+    .knowledge-base-tags-wrapper:after {
+        background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff);
+        content: "";
+        height: 100%;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 33px
+    }
+
+    .knowledge-base-tags {
+        display: flex;
+        margin: 0;
+        overflow: auto;
+        position: relative;
+        white-space: nowrap
+    }
+
+    .knowledge-base-article-box {
+        margin-bottom: 24px;
+        max-width: 100%;
+    }
+
+    .knowledge-base-article-box:first-child .knowledge-base-article-box-wrapper {
+        border-radius: 0 0 6px 6px;
+        float: none;
+        height: 277px;
+        width: 100%
+    }
+
+    .knowledge-base-article-box:first-child .knowledge-base-article-box-img {
+        border-radius: 6px 6px 0 0;
+        float: none;
+        height: 193px;
+        width: 100%
+    }
+
+    .knowledge-base-article-box:first-child .knowledge-base-article-box-text {
+        -webkit-line-clamp: 5;
+        max-height: 161px
+    }
+
+    .knowledge-base-article-box:first-child .knowledge-base-article-box-text h2 {
+        margin-bottom: 16px
+    }
+
+    .knowledge-base-article-box-text {
+        max-height: 161px
+    }
+}

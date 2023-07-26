@@ -1,0 +1,127 @@
+.legal-information {
+  margin-bottom: 150px;
+}
+.legal-information .block {
+  margin-bottom: 20px;
+}
+.legal-information .block:not(:last-of-type) {
+  border-bottom: 1px solid rgba(24, 24, 30, 0.05);
+}
+.legal-information .block.less h2:after {
+  transform: rotate(180deg);
+}
+.legal-information .block h2 {
+  color: #18181e;
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 20px 20px 0;
+  position: relative;
+}
+.legal-information .block h2:after {
+  content: url(/build/images/arrow.97cc9dcd.svg);
+  position: absolute;
+  right: 0;
+  top: -3px;
+  transition: transform 0.3s ease;
+}
+.legal-information .content {
+  display: none;
+  font-size: 18px;
+  line-height: 29px;
+  padding: 0 0 40px;
+}
+.legal-information .content ol {
+  color: rgba(24, 24, 30, 0.6);
+}
+.legal-information .content ol li {
+  margin: 25px 0;
+}
+.legal-information .content ul {
+  list-style: none;
+  margin-bottom: 25px;
+  padding: 0;
+}
+.legal-information .content ul:last-of-type {
+  margin-bottom: 0;
+}
+.legal-information .content ul li {
+  padding: 0 0 20px 25px;
+  position: relative;
+}
+.legal-information .content ul li:before {
+  content: url(/build/images/download.3ecf9030.svg);
+  left: 0;
+  position: absolute;
+  top: 4px;
+}
+.legal-information .content ul li a {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.legal-information .content p {
+  color: rgba(24, 24, 30, 0.6);
+  margin: 20px 0 25px;
+}
+.legal-information .content h4 {
+  margin: 18px 0 10px;
+}
+.legal-information .company-news {
+  line-height: 1;
+  margin: 0 0 40px;
+}
+.legal-information .company-news h3 {
+  color: #18181e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 10px 0;
+}
+.legal-information .company-news p {
+  color: rgba(24, 24, 30, 0.6);
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.legal-information .company-news a,
+.legal-information .company-news-all {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body[dir="rtl"] .legal-information .block h2 {
+  padding: 0 0 20px 20px;
+}
+body[dir="rtl"] .legal-information .block h2:after {
+  left: 0;
+  right: auto;
+}
+body[dir="rtl"] .legal-information .content ul li {
+  padding: 0 25px 20px 0;
+}
+body[dir="rtl"] .legal-information .content ul li:before {
+  left: auto;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .legal-information {
+    margin-bottom: 75px;
+  }
+  .legal-information .block h2 {
+    font-size: 27px;
+  }
+  .legal-information .content {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .legal-information .content ol li {
+    margin: 15px 0;
+  }
+  .legal-information .company-news h3 {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 5px 0;
+  }
+}

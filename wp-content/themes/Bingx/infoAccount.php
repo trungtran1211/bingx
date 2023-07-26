@@ -40,9 +40,7 @@ get_header(); ?>
                         <td>Đòn bẩy tối đa:</td>
                         <td></td>
                         <td class="selected">1:500<br>
-                            <small>GIỚI HẠN MỞ LỆNH TỐI ĐA BỊ GIỚI HẠN*<br>
-                                ĐỂ BIẾT THÊM CHI TIẾT XIN VUI LÒNG KIỂM TRA: <a href="/int/margin_table_current">BẢNG
-                                    MARGIN</a></small>
+                            <small>GIỚI HẠN MỞ LỆNH TỐI ĐA BỊ GIỚI HẠN*</small>
                         </td>
                     </tr>
                     <tr>

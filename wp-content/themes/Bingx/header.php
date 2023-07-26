@@ -2,6 +2,7 @@
 /**
  * The header.
  */
+// echo home_url("/contact");
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -25,8 +26,7 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/about.2335bc8f.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/ambassadors.027b5bc9.css">
     
-    <link rel="stylesheet" href="//xas.scdn5.secure.raxcdn.com/build/css/trading-conditions-legal-information.e55e2102.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/trading-conditions-instrument-specification.96c2358e.css">
+    <!-- <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/trading-conditions-legal-information.e55e2102.css">-->
     <?php wp_head(); ?>
 </head>
 
@@ -51,49 +51,9 @@
         </div>
 
         <div class="overall-header js-overall-header" style="margin-top: 0px;">
-            <!-- <div class="container d-none d-xl-flex justify-content-end">
-               
-                <ul class="list-inline overall-header-top-menu">
-                    <li class="list-inline-item">
-                        <a href="#">Trợ giúp</a>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">Ký quỹ, nạp tiền</a>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <button data-bs-toggle="dropdown" aria-expanded="false">Đối tác</button>
-                        <div class="dropdown-menu overall-header-dropdown-menu dropdown-menu-right">
-                            <a href="#" class="overall-header-dropdown-link">Trở thành đối tác</a>
-                        </div>
-                    </li>
-
-                    <li class="list-inline-item">
-                        <a href="#">Liên hệ với BingX</a>
-                    </li>
-
-
-
-                    <li class="list-inline-item dropdown">
-                        <button data-bs-toggle="dropdown" class="js-login-aa" aria-expanded="false">
-                            Đăng nhập
-                        </button>
-                        <div class="dropdown-menu overall-header-dropdown-menu dropdown-menu-right">
-                            <a rel="nofollow noreferrer" href="#" target="_blank"
-                                class="btn btn-block btn-green js-login-xs-5-aa">
-                                xStation 5 REAL/DEMO
-                            </a>
-                            <hr>
-                            <a rel="nofollow noreferrer" href="#" target="_blank"
-                                class="overall-header-dropdown-link js-login-co-aa">Quản lý tài khoản</a>
-                        </div>
-                    </li>
-                </ul>
-
-            </div> -->
+            
             <div class="container d-flex justify-content-between align-items-center">
-                <a class="d-inline-block overall-header-logo js-logo-click-aa" href="#">
+                <a class="d-inline-block overall-header-logo js-logo-click-aa" href="<?php echo home_url(); ?>">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png"
                         alt="XTB&#x20;Online&#x20;Trading" width="97" height="28" class="lazyload white-theme-icon">
                     <img data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/logo_white.db46bfc4.svg"
@@ -111,25 +71,11 @@
                     <div class="float-end position-relative js-overall-header-menu-item-wrapper">
                         <div class="overall-header-menu-list-background js-overall-header-menu-list-background"></div>
                         <div class="overall-header-menu-item js-overall-header-menu-item">
-                            <a href="#" class="">Dịch vụ đầu tư</a>
-                            <!-- <div class="overall-header-menu-list js-overall-header-menu-list">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#" class="">Danh sách mã giao dịch</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="">Thông
-                                            tin tài khoản</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="">Thông tin Sản phẩm</a>
-                                    </li>
-                                </ul>
-                            </div> -->
+                            <a href="<?php echo home_url("/dsmagiaodich"); ?>" class="">Dịch vụ đầu tư</a>
+                            
                         </div>
                         <div class="overall-header-menu-item js-overall-header-menu-hide-background">
-                            <a href="#" class=" ">Nền tảng giao dịch</a>
+                            <a href="<?php echo home_url("/nentanggiaodich"); ?>" class=" ">Nền tảng giao dịch</a>
                         </div>
                         <div class="overall-header-menu-item js-overall-header-menu-item">
                             <!-- <a href="#" class="">Phân tích thị trường</a> -->
@@ -145,30 +91,12 @@
                             </div> -->
                         </div>
                         <div class="overall-header-menu-item js-overall-header-menu-item">
-                            <a href="#" class="">Đào tạo</a>
-                            <!-- <div class="overall-header-menu-list js-overall-header-menu-list">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#" class="">Kiến thức nền tảng</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="">Live Webinar</a>
-                                    </li>
-                                </ul>
-                            </div> -->
+                            <a href="<?php echo home_url("/daotao"); ?>" class="">Đào tạo</a>
+                            
                         </div>
                         <div class="overall-header-menu-item js-overall-header-menu-item">
-                            <a href="#" class="">Vì sao chọn BingX</a>
-                            <!-- <div class="overall-header-menu-list js-overall-header-menu-list">
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a href="#" class="">Về BingX</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="">Đại sứ</a>
-                                    </li>
-                                </ul>
-                            </div> -->
+                            <a href="<?php echo home_url("/about"); ?>" class="">Vì sao chọn BingX</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -198,13 +126,14 @@
                 </div>
                 <div class="overall-header-accordion js-overall-header-accordion">
                     <div class="overall-header-accordion-btn-parent">
-                        <button class="overall-header-accordion-btn js-overall-header-accordion-btn">
-                            Dịch vụ đầu tư
-                            <img class="lazyload"
+                        
+                            <a href="<?php echo home_url("/dsmagiaodich"); ?>" class="overall-header-accordion-btn">Dịch vụ đầu tư</a>
+                            
+                            <!-- <img class="lazyload"
                                 data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/more-less_menu_mobile.22d21f80.svg"
-                                alt="">
-                        </button>
-                        <ul class="list-unstyled overall-header-accordion-content js-overall-header-accordion-content">
+                                alt=""> -->
+                        
+                        <!-- <ul class="list-unstyled overall-header-accordion-content js-overall-header-accordion-content">
                             <li>
                                 <a href="#">Danh sách mã giao dịch</a>
                             </li>
@@ -215,13 +144,13 @@
                                 <a href="#">Thông tin Sản
                                     phẩm</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="overall-header-accordion-btn-parent">
-                        <a href="#"
+                        <a href="<?php echo home_url("/nentanggiaodich"); ?>"
                             class="overall-header-accordion-btn">Nền tảng giao dịch</a>
                     </div>
-                    <div class="overall-header-accordion-btn-parent">
+                    <!-- <div class="overall-header-accordion-btn-parent">
                         <button class="overall-header-accordion-btn js-overall-header-accordion-btn">
                             Phân tích thị trường
                             <img class="lazyload"
@@ -235,42 +164,40 @@
                             <li>
                                 <a href="#">Bảng tỷ giá</a>
                             </li>
-                        </ul>
-                    </div>
+                        </ul> 
+                    </div> -->
                     <div class="overall-header-accordion-btn-parent">
-                        <button class="overall-header-accordion-btn js-overall-header-accordion-btn">
+                        <a href="<?php echo home_url("/daotao"); ?>">
                             Đào tạo
-                            <img class="lazyload"
+                            <!-- <img class="lazyload"
                                 data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/more-less_menu_mobile.22d21f80.svg"
-                                alt="">
-                        </button>
-                        <ul class="list-unstyled overall-header-accordion-content js-overall-header-accordion-content">
+                                alt=""> -->
+                        </a>
+                        <!-- <ul class="list-unstyled overall-header-accordion-content js-overall-header-accordion-content">
                             <li>
                                 <a href="#">Kiến thức nền tảng</a>
                             </li>
                             <li>
                                 <a href="#">Live Webinar</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="overall-header-accordion-btn-parent">
-                        <button class="overall-header-accordion-btn js-overall-header-accordion-btn">
-                            Vì sao chọn BingX
-                            <img class="lazyload"
-                                data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/more-less_menu_mobile.22d21f80.svg"
-                                alt="">
-                        </button>
-                        <ul class="list-unstyled overall-header-accordion-content js-overall-header-accordion-content">
+                        <a href="<?php echo home_url("/about"); ?>"> Vì sao chọn BingX</a>
+                        <!-- <img class="lazyload"
+                            data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/svg-icons/more-less_menu_mobile.22d21f80.svg"
+                            alt=""> -->
+                        <!-- <ul class="list-unstyled overall-header-accordion-content js-overall-header-accordion-content">
                             <li>
                                 <a href="#">Về BingX</a>
                             </li>
                             <li>
                                 <a href="#">Đại sứ</a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
-                <ul class="list-unstyled overall-header-bottom-list">
+                <!-- <ul class="list-unstyled overall-header-bottom-list">
                     <li>
                         <a href="#">Trợ giúp</a>
                     </li>
@@ -290,13 +217,13 @@
                         <a rel="nofollow noreferrer" href="#" target="_blank"
                             class="js-login-xs-5-aa">xStation 5 REAL/DEMO</a>
                     </li>
-                </ul>
-                <div class="overall-header-buttons">
+                </ul> -->
+                <!-- <div class="overall-header-buttons">
                     <a href="#"
                         class="btn btn-border-gray js-menu-open-demo-aa js-change-url-on-mobile">Mở tài khoản thử ảo</a>
                     <a href="#" class="btn btn-green js-menu-open-real-aa js-change-url-on-mobile">Tạo
                         tài khoản</a>
-                </div>
+                </div> -->
             </div>
             <div class="d-xl-none overall-header-backdrop js-overall-header-backdrop"></div>
 

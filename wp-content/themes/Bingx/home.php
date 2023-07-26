@@ -73,7 +73,7 @@ get_header(); ?>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <a id="homePage_btn_showForex_topKV" href="#" class="js-gtm-offer-box-green">
+                            <a id="homePage_btn_showForex_topKV" href="<?php echo home_url("/dsmagiaodich"); ?>" class="js-gtm-offer-box-green">
                                 <div class="offer-box offer-box-green">
                                     <h2 class="offer-box-title">Forex, Chỉ số, Thương phẩm</h2>
                                     <div class="offer-box-arrow">
@@ -96,7 +96,7 @@ get_header(); ?>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a id="homePage_btn_showForex_topKV" href="#" class="js-gtm-offer-box-blue">
+                            <a id="homePage_btn_showForex_topKV" href="<?php echo home_url("/cpCFD"); ?>" class="js-gtm-offer-box-blue">
                                 <div class="offer-box offer-box-blue">
                                     <h2 class="offer-box-title">CFD Cổ phiếu & ETF <br> không phí hoa hồng</h2>
                                     <div class="offer-box-arrow">
@@ -119,7 +119,7 @@ get_header(); ?>
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a id="homePage_btn_showForex_topKV" href="#"
+                            <a id="homePage_btn_showForex_topKV" href="<?php echo home_url("/electronicMoney"); ?>"
                                 class="js-gtm-offer-box-orange">
                                 <div class="offer-box offer-box-orange">
                                     <h2 class="offer-box-title">Bitcoin & và các đồng tiền điện tử khác (CFD)</h2>
@@ -168,7 +168,7 @@ get_header(); ?>
                                     Phổ biến nhất
                                 </a>
                             </li>
-                            <li role="presentation" class="nav-item">
+                            <!-- <li role="presentation" class="nav-item">
                                 <a href="#" role="tab" data-bs-toggle="tab" aria-selected="false" tabindex="-1">
                                     Forex
                                 </a>
@@ -192,7 +192,7 @@ get_header(); ?>
                                 <a href="#" role="tab" data-bs-toggle="tab" aria-selected="false" tabindex="-1">
                                     Tiền điện tử
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="tab-content">
@@ -614,8 +614,8 @@ get_header(); ?>
                                     <li>Máy tính cá nhân, thống kê hiệu quả giao dịch, tâm lý thị trường</li>
                                     <li>Biểu đồ giao dịch, độ sâu thanh khoản</li>
                                 </ul>
-                                <a class="btn btn-border-green btn-big" id="homePage_btn_showXstation_platforms"
-                                    href="/vn/trading-services/trading-platforms/xstation">Tìm hiểu thêm
+                                <a target="_blank" class="btn btn-border-green btn-big" id="homePage_btn_showXstation_platforms"
+                                    href="<?php echo home_url("/about"); ?>">Tìm hiểu thêm
                                 </a>
                             </div>
                             <div class="col-md-6">
@@ -801,97 +801,50 @@ get_header(); ?>
                 <h2>Tin tức Thị trường</h2>
                 <div class="swiper-container single-news-slider-container js-news-slider">
                     <div class="swiper-wrapper single-news-slider-wrapper">
-                        <!-- <div class="swiper-slide">
-                                <div class="single-news-slide js-slide" style="background-image: url('https://xtb.scdn5.secure.raxcdn.com/postTopImage/0093/28/thumb_9227476_postTopImage_front.jpeg')">
-                                    <div class="single-news-body">
-                                        <p>11 tháng 7, 2023</p>
-                                        <h3>Bản tin hàng hóa: Dầu, Vàng, Lúa mì, Đồng (07.11.2023)</h3>
+                    <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'posts_per_page' => '5',
+                            'tax_query' => [
+                                [
+                                    'taxonomy' => 'category',
+                                    'terms' => 3,
+                                    
+                                ] 
+                            ],
+                        );
+                        $post_query = new WP_Query($args);
+
+                        if($post_query->have_posts() ) {
+                            while($post_query->have_posts() ) {
+                                    $post_query->the_post();
+                            ?>                        
+                                <a id="homePage_btn_showNews_NewsSection"
+                                    href="<?php the_permalink() ?>"
+                                    class="swiper-slide js-gtm-market-news">
+                                    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+                                    <div class="single-news-slide js-slide"
+                                        style="background-image: url('<?php echo $image[0]; ?>')">
+                                        <div class="single-news-body">
+                                            <p><?php echo get_the_date(); ?></p>
+                                            <h3><?php the_title(); ?></h3>
+                                        </div>
+                                        <div class="single-news-footer d-flex justify-content-between align-items-center">
+                                            Tìm hiểu thêm
+                                            <img class="lazyload"
+                                                data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
+                                                alt="">
+                                        </div>
                                     </div>
-                                    <div class="single-news-footer d-flex justify-content-between align-items-center">
-                                        Tìm hiểu thêm
-                                        <img class="lazyload" data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg" alt="">
-                                    </div>
-                                    <div class="single-news-hover">
-                                        <p>Mở một tài khoản hoặc đăng nhập để truy cập phần tin tức.</p>
-                                        <a href="#"
-                                           target="_blank" class="btn btn-border-black" rel="noreferrer">ĐĂNG NHẬP</a>
-                                                                                    <a href="#"
-                                               class="btn btn-green">Đăng ký tài khoản</a>
-                                                                            </div>
-                                </div>
-                            </div> -->
-                        <a id="homePage_btn_showNews_NewsSection"
-                            href="/vn/market-analysis/news-and-research/so-keo-meta-platforms-vs-twitter"
-                            class="swiper-slide js-gtm-market-news">
-                            <div class="single-news-slide js-slide"
-                                style="background-image: url('https://xtb.scdn5.secure.raxcdn.com/postTopImage/0101/49/thumb_10048288_postTopImage_front.jpeg')">
-                                <div class="single-news-body">
-                                    <p>6 tháng 7, 2023</p>
-                                    <h3>So kèo Meta Platforms vs Twitter</h3>
-                                </div>
-                                <div class="single-news-footer d-flex justify-content-between align-items-center">
-                                    Tìm hiểu thêm
-                                    <img class="lazyload"
-                                        data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <a id="homePage_btn_showNews_NewsSection"
-                            href="/vn/market-analysis/news-and-research/cac-nha-phan-tich-khat-khe-voi-alphabet-va-cac-big-tech-khac"
-                            class="swiper-slide js-gtm-market-news">
-                            <div class="single-news-slide js-slide"
-                                style="background-image: url('https://xtb.scdn5.secure.raxcdn.com/postTopImage/0093/28/thumb_9227512_postTopImage_front.jpeg')">
-                                <div class="single-news-body">
-                                    <p>28 tháng 6, 2023</p>
-                                    <h3>Các nhà phân tích khắt khe với Alphabet và các Big Tech khác❗</h3>
-                                </div>
-                                <div class="single-news-footer d-flex justify-content-between align-items-center">
-                                    Tìm hiểu thêm
-                                    <img class="lazyload"
-                                        data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <a id="homePage_btn_showNews_NewsSection"
-                            href="/vn/market-analysis/news-and-research/chung-khoan-trung-quoc-phuc-hoi-giua-ky-vong-noi-long-hkcomp-tang-1-5"
-                            class="swiper-slide js-gtm-market-news">
-                            <div class="single-news-slide js-slide"
-                                style="background-image: url('https://xtb.scdn5.secure.raxcdn.com/postTopImage/0093/27/thumb_9226831_postTopImage_front.jpeg')">
-                                <div class="single-news-body">
-                                    <p>27 tháng 6, 2023</p>
-                                    <h3>Chứng khoán Trung Quốc phục hồi giữa kỳ vọng nới lỏng 📈 HKComp...</h3>
-                                </div>
-                                <div class="single-news-footer d-flex justify-content-between align-items-center">
-                                    Tìm hiểu thêm
-                                    <img class="lazyload"
-                                        data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-                        <a id="homePage_btn_showNews_NewsSection"
-                            href="/vn/market-analysis/news-and-research/thoi-tiet-nong-buc-o-texas-thuc-day-nhu-cau-nang-luong-tao-ra-tu-khi-dot"
-                            class="swiper-slide js-gtm-market-news">
-                            <div class="single-news-slide js-slide"
-                                style="background-image: url('https://xtb.scdn5.secure.raxcdn.com/postTopImage/0093/28/thumb_9227419_postTopImage_front.jpeg')">
-                                <div class="single-news-body">
-                                    <p>27 tháng 6, 2023</p>
-                                    <h3>Thời tiết nóng bức ở Texas thúc đẩy nhu cầu năng lượng tạo ra...</h3>
-                                </div>
-                                <div class="single-news-footer d-flex justify-content-between align-items-center">
-                                    Tìm hiểu thêm
-                                    <img class="lazyload"
-                                        data-src="https://xas.scdn5.secure.raxcdn.com/build/twigImages/pages/homepage/arrow_right.00dddbf2.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
+                                </a>
+                                <?php
+                            }
+                        }
+                    ?>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
                         <a class="btn btn-border-green btn-big" id="homePage_btn_showMoreNews_NewsSection"
-                            href="/vn/market-analysis/news-and-research">Các tin tức khác
+                            href="<?php echo home_url("/tintuc"); ?>">Các tin tức khác
                         </a>
                         <div class="d-none d-sm-flex slider-navigation">
                             <div class="js-prev swiper-button-prev js-gtm-homepage-news-arrow"><svg
@@ -1076,7 +1029,7 @@ get_header(); ?>
                     <div class="iblock-open-account-text">
                         <h2>Đăng ký miễn phí</h2>
                         <p>Chỉ mất vài phút để bắt đầu giao dịch. Đơn giản và hoàn toàn miễn phí!</p>
-                        <div class="js-btns">
+                        <!-- <div class="js-btns">
                             <a href="#" id="btn_homePage_createDemo_openAccount"
                                 class="btn btn-green btn-big desktop">
                                 Khám phá nền tảng
@@ -1093,7 +1046,7 @@ get_header(); ?>
                                 class="btn btn-green btn-big os-android os-windows js-dynamic-link">
                                 TẢI APP
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 iblock-open-account-img">
